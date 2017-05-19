@@ -1,4 +1,4 @@
 Light Grey 	- #7f7f7f / 767676 / acacac
 Dark Grey	- #242424 / 333333 / 25211d
-Brown		- #5a2d03 / 442200 / 412b16
+Brown		- #5a2d03 / 442200 / 412b16 / #663300
 Orange		- #ff7f27 / ff9148 / ff9955

@@ -100,21 +100,11 @@ nav ul li a:hover{
 }
 /*Main Container Styles*/
 
-section{
-	display: grid;
+section.topSection{
+    display: flex;
 	justify-content: center;
 	max-width: 100vw;
 /* 	border: 1px solid #000; */
-}
-
-.wide-content{
-	display: flex;
-	width: 90vw;	
-}
-
-.box-of-images img{
-	width: 80px;
-	height: 40px;
 }
 
 .content {
@@ -122,26 +112,29 @@ section{
 	flex-wrap: wrap;
 	/*display: grid;*/
 	width: 900px;
+    justify-content: space-around;
 /* 	border: solid #000;
 	border-width: 0px 1px 0px 1px; */
 }
 
 .content .parent{
-	width: 150px;
-	border-radius: 3px;
-}
-
-.content .parent .p1{
-	border: 1px solid yellow;
-	border-radius: 3px;
-	background-color: red;
+    display: flex;
+    flex-direction: column;
+	width: 45%;
 }
 
 .content .parent .item{
-	align-item: center;
-	border: 1px solid rgb(156,156,0);
-	border-radius: 3px;
-	background-color: rgba(555,555,0,1);
+    display: flex;
+    align-content: center;
+	background-color: #f1f1f1;
+}
+.parent .item-across{
+    width: 100%;
+}
+
+img .profile-img{
+    margin: auto;
+    
 }
 
 .c1{
@@ -154,13 +147,19 @@ section{
 	margin: 10px 0;
 }
 
-.wide-content {
-	display: flex;
-	flex-wrap: wrap;
-	/*display: grid;*/
-	width: 90vw;
-/* 	border: solid #000;
-	border-width: 0px 1px 0px 1px; */
+section.wideSection{
+	max-width: 100vw;
+    max-height: 40vw;
+}
+
+.wide-content{
+    display: flex;
+    justify-content: space;
+}
+
+.wide-content img{
+    width: 50vw;
+    height: 25vw;
 }
 
 /*Footer Styles*/

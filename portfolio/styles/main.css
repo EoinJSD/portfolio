@@ -10,23 +10,27 @@
 	src: url('fonts/YouthBeauty.otf');
 }
 
+h3{
+    margin: 10px 5px 0px 0px;
+}
+
 body{
-	background: -moz-linear-gradient(top, #acacac 1%, #f5f5f5 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #acacac 1%,#f5f5f5 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #acacac 1%,#f5f5f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	background-repeat: no-repeat;
-	height: 100%;
-	margin: 0px;
+	background-image: url(../images/Background-2.jpg);
+    background-color: #212121;
+    background-size: cover;
 	font-family: verdana;
 	font-size: 12pt;
+    color: #fff;
+    margin: 0;
+    text-align: justify;
 }
 
 
 /*Header Styles*/
 header{
-	background-color: #acacac;
+    /*background: #212121;*/
 	display: flex;
-	border-bottom: 5px solid #ff9148;
+	border-bottom: 1px solid #ff9148;
 	height: 50px;
 	max-width: 100vw;
 	/* margin-bottom: 2px; */
@@ -38,11 +42,10 @@ nav{
 	width: 900px;
 	max-width: 900px;
 	padding: 0px 5px;
-	display: flex;
 	justify-content: space-between;
+    align-items: center;
 /* 	border: solid #000;
 	border-width: 0px 1px 0px 1px; */
-	align-items: center;
 }
 
 h1.logo{
@@ -91,8 +94,8 @@ ul.links li a{
 }
 
 nav ul li a:hover{
-	color: #5a2d03; /*Brown*/
-	background-color: #ff9148; /*Orange*/
+	color: #3b240e; /*Brown*/
+	background-color: #ff8d2a; /*Orange*/
 	transition: .3s;
 	
 	/* color: rgb(0, 102, 204);
@@ -100,21 +103,13 @@ nav ul li a:hover{
 }
 /*Main Container Styles*/
 
-section{
-	display: grid;
+section.topSection{
+    background: url(../images/Background-1.jpg) no-repeat center;
+    display: flex;
 	justify-content: center;
 	max-width: 100vw;
+    height: 30vw;
 /* 	border: 1px solid #000; */
-}
-
-.wide-content{
-	display: flex;
-	width: 90vw;	
-}
-
-.box-of-images img{
-	width: 80px;
-	height: 40px;
 }
 
 .content {
@@ -122,30 +117,40 @@ section{
 	flex-wrap: wrap;
 	/*display: grid;*/
 	width: 900px;
+    justify-content: space-around;
 /* 	border: solid #000;
 	border-width: 0px 1px 0px 1px; */
 }
 
 .content .parent{
-	width: 150px;
-	border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+	width: 45%;
 }
 
-.content .parent .p1{
-	border: 1px solid yellow;
-	border-radius: 3px;
-	background-color: red;
+.parent.p3{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.parent.p3 img{
+    height: 80px;
+    width: 80px;
+    margin: 0px 27px;
 }
 
 .content .parent .item{
-	align-item: center;
-	border: 1px solid rgb(156,156,0);
-	border-radius: 3px;
-	background-color: rgba(555,555,0,1);
+    display: flex;
+    align-content: center;
+}
+.parent .item-across{
+    width: 100%;
 }
 
 .c1{
-	background-color: #ffffff;
 	margin: 10px 0px;
 }
 
@@ -154,17 +159,85 @@ section{
 	margin: 10px 0;
 }
 
-.wide-content {
-	display: flex;
-	flex-wrap: wrap;
-	/*display: grid;*/
-	width: 90vw;
-/* 	border: solid #000;
-	border-width: 0px 1px 0px 1px; */
+/* Wide Section | Image Display Box */
+
+section.wideSection{
+    display: grid;
+    height: auto;
+    background-color: #212121;
+}
+
+.wide-content-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 16vw;
+    height: 220px;
+    background-color: darkgrey;
+}
+
+.box:nth-child(even){
+    background-color: dimgrey;
+}
+
+/* END | END */
+
+section.blogSection{
+    display: flex;
+	justify-content: center;
+	max-width: 100vw;
+/* 	border: 1px solid #000; */
+}
+
+.blogPlacemat-container{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.blogPlacemat{
+    width: 450px;
+    padding: 0px 25px;
 }
 
 /*Footer Styles*/
 
+footer{
+    display: flex;
+    justify-content: center;
+	border-top: 1px solid #ff9148;    
+    background: #212121;
+    bottom: 0px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.footer-container{
+	width: 900px;
+	max-width: 900px;
+}
+
+ul.footer-ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    list-style-type: none;
+	overflow: hidden;
+	padding: 0px;
+}
+
+ul.footer-ul li{
+    margin: 0;
+    color: ;
+}
+
+ul.inner-list{
+    list-style-type: none;
+    display: list-item;
+    padding: 0px;
+}
 
 /*other*/
 
@@ -179,3 +252,4 @@ section{
 .active {
     background-color: #4CAF50;
 } */
+

@@ -10,8 +10,14 @@
 	src: url('fonts/YouthBeauty.otf');
 }
 
+h3{
+    margin: 10px 5px 0px 0px;
+}
+
 body{
 	background-image: url(../images/Background-2.jpg);
+    background-color: #212121;
+    background-size: cover;
 	font-family: verdana;
 	font-size: 12pt;
     color: #fff;
@@ -22,7 +28,7 @@ body{
 
 /*Header Styles*/
 header{
-    background: #212121;
+    /*background: #212121;*/
 	display: flex;
 	border-bottom: 1px solid #ff9148;
 	height: 50px;
@@ -98,9 +104,11 @@ nav ul li a:hover{
 /*Main Container Styles*/
 
 section.topSection{
+    background: url(../images/Background-1.jpg) no-repeat center;
     display: flex;
 	justify-content: center;
 	max-width: 100vw;
+    height: 30vw;
 /* 	border: 1px solid #000; */
 }
 
@@ -121,12 +129,17 @@ section.topSection{
 }
 
 .parent.p3{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
     width: 95%;
+    margin-top: 10px;
 }
 
-div.technologies img{
+.parent.p3 img{
     height: 80px;
     width: 80px;
+    margin: 0px 27px;
 }
 
 .content .parent .item{
@@ -146,19 +159,47 @@ div.technologies img{
 	margin: 10px 0;
 }
 
+/* Wide Section | Image Display Box */
+
 section.wideSection{
-	max-width: 100vw;
-    max-height: 40vw;
+    display: grid;
+    height: auto;
+    background-color: #212121;
 }
 
-.wide-content{
+.wide-content-1{
     display: flex;
-    justify-content: space;
+    flex-wrap: wrap;
 }
 
-.wide-content img{
-    width: 50vw;
-    height: 25vw;
+.box{
+    width: 16vw;
+    height: 220px;
+    background-color: darkgrey;
+}
+
+.box:nth-child(even){
+    background-color: dimgrey;
+}
+
+/* END | END */
+
+section.blogSection{
+    display: flex;
+	justify-content: center;
+	max-width: 100vw;
+/* 	border: 1px solid #000; */
+}
+
+.blogPlacemat-container{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.blogPlacemat{
+    width: 450px;
+    padding: 0px 25px;
 }
 
 /*Footer Styles*/
@@ -168,28 +209,34 @@ footer{
     justify-content: center;
 	border-top: 1px solid #ff9148;    
     background: #212121;
-    width: 100vw;
     bottom: 0px;
     margin: 0;
+    padding: 0 0 10px 0;
 }
 
 .footer-container{
-    display: flex;
 	width: 900px;
 	max-width: 900px;
 }
 
-footer div ul{
+ul.footer-ul{
     display: flex;
+    justify-content: space-between;
     margin: 0;
     list-style-type: none;
 	overflow: hidden;
 	padding: 0px;
 }
 
-footer div ul li{
+ul.footer-ul li{
     margin: 0;
     color: ;
+}
+
+ul.inner-list{
+    list-style-type: none;
+    display: list-item;
+    padding: 0px;
 }
 
 /*other*/
@@ -206,5 +253,3 @@ footer div ul li{
     background-color: #4CAF50;
 } */
 
-
-(screen-size)

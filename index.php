@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Eoin J S Designs </title>
+    <title> EJSDesigns.ie | Landing </title>
     <link rel="stylesheet" href="styles/main.css" />
 	<link rel="shortcut icon" href="../images/favicon/favicon.ico">		
 </head>
 <body>
-
-	<header><!-- Header Main Container -->
-		<nav><!--Centered container for Logo and Links-->
-			<div class="logo-container">
-			<h1 class="logo">Eoin J S Designs</h1>
-			</div>
-			<div class="links-container">
-			<ul class="links">
-			<li><a class="active" id="home" href="index.html">Home</a></li>
-			<li><a id="blog" href="index.html">Blog</a></li>
-			<li><a id="projects" href="index.html">Projects</a></li>
-			</ul> 
-			</div>
-		</nav>
-	</header>
+    
+    <header>
+    <?php include_once('pages/inc/header.inc.php') ?>
+    </header>
         
 	<section class="topSection"><!-- Body Main Container -->
     <div class="content c1">
@@ -81,31 +70,7 @@
     </section>
     
     <footer>
-        <div class="footer-container">
-            <ul class="footer-ul">
-                <li><h3>Contact</h3>
-                    <ul class="inner-list">
-                        <li>Home</li>
-                        <li>eMail</li>
-                        <li>Mobile</li>
-                    </ul>
-                </li>
-                <li><h3>Social</h3>
-                    <ul class="inner-list">
-                        <li>facebook</li>
-                        <li>twitter</li>
-                        <li>instagram</li>
-                    </ul>
-                </li>
-                <li><h3>Signature</h3>
-                    <ul class="inner-list">
-                        <li>thumbnail</li>
-                        <li>full name</li>
-                        <li>logo</li>
-                    </ul>                
-                </li>
-            </ul>
-        </div>    
+        <?php include_once('pages/inc/footer.inc.php') ?>
     </footer>
 </body>
 </html>

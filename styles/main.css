@@ -57,6 +57,15 @@ h1.logo{
 	text-shadow: #000 -2px 1px 4px;
 }
 
+h2.logo{
+	font-family: Logo1;
+	font-size: 2em;
+	padding: 0px;
+	margin: 0px;
+	color: #fff;
+	text-shadow: #000 -2px 1px 4px;
+}
+
 /* h1.logo:hover{
 	color: #000;
 	text-shadow: #fff -2px 1px 4px;
@@ -69,7 +78,7 @@ h1.logo{
 }
 
 .links-container{
-	max-width: 310px;
+	max-width: 320px;
 }
 
 ul.links {

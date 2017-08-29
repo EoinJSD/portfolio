@@ -2,8 +2,8 @@
 <html>
 <head>
     <title> EJSDesigns.ie | Blog </title>
-    <link rel="stylesheet" href="../styles/main.css" />
-	<link rel="shortcut icon" href="../images/favicon/favicon.ico">		
+    <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
+	<link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">		
 </head>
 <body>
     

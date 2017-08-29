@@ -122,13 +122,14 @@ section.topSection{
 }
 
 .content {
-	display: flex;
-	flex-wrap: wrap;
-	/*display: grid;*/
-	width: 900px;
-    justify-content: space-around;
-/* 	border: solid #000;
-	border-width: 0px 1px 0px 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row-reverse; */
+    /*display: grid; */
+    width: 900px;
+    justify-content: flex-end;
+    /*border: solid #000;*/
+	/*border-width: 0px 1px 0px 1px; */
 }
 
 .content .parent{
@@ -182,7 +183,7 @@ section.wideSection{
 }
 
 .box{
-    width: 16vw;
+    width: 20%;
     height: 220px;
     background-color: darkgrey;
 }
@@ -220,7 +221,7 @@ footer{
     background: #212121;
     bottom: 0px;
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 .footer-container{

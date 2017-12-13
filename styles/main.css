@@ -173,7 +173,7 @@ section.topSection{
 
 section.wideSection{
     display: grid;
-    height: auto;
+    height: 284px;
     background-color: #212121;
 }
 
@@ -184,7 +184,7 @@ section.wideSection{
 
 .box{
     width: 20%;
-    height: 220px;
+    height: 100%;
     background-color: darkgrey;
 }
 
@@ -203,6 +203,7 @@ section.blogSection{
 
 .blogPlacemat-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 900px;
 }
@@ -240,7 +241,7 @@ ul.footer-ul{
 
 ul.footer-ul li{
     margin: 0;
-    color: ;
+    color: white;
 }
 
 ul.inner-list{

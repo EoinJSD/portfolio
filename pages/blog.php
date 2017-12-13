@@ -11,7 +11,11 @@
     <?php include_once('inc/header.inc.php') ?>
     </header>
     
-    
+    <section class="topSection">
+    <p>
+        
+    </p>
+    </section>
     
     <footer>
         <?php include_once('inc/footer.inc.php') ?>

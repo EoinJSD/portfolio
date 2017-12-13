@@ -57,6 +57,15 @@ h1.logo{
 	text-shadow: #000 -2px 1px 4px;
 }
 
+h2.logo{
+	font-family: Logo1;
+	font-size: 2em;
+	padding: 0px;
+	margin: 0px;
+	color: #fff;
+	text-shadow: #000 -2px 1px 4px;
+}
+
 /* h1.logo:hover{
 	color: #000;
 	text-shadow: #fff -2px 1px 4px;
@@ -69,7 +78,7 @@ h1.logo{
 }
 
 .links-container{
-	max-width: 310px;
+	max-width: 320px;
 }
 
 ul.links {
@@ -113,13 +122,14 @@ section.topSection{
 }
 
 .content {
-	display: flex;
-	flex-wrap: wrap;
-	/*display: grid;*/
-	width: 900px;
-    justify-content: space-around;
-/* 	border: solid #000;
-	border-width: 0px 1px 0px 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row-reverse; */
+    /*display: grid; */
+    width: 900px;
+    justify-content: flex-end;
+    /*border: solid #000;*/
+	/*border-width: 0px 1px 0px 1px; */
 }
 
 .content .parent{
@@ -163,7 +173,7 @@ section.topSection{
 
 section.wideSection{
     display: grid;
-    height: auto;
+    height: 284px;
     background-color: #212121;
 }
 
@@ -173,8 +183,8 @@ section.wideSection{
 }
 
 .box{
-    width: 16vw;
-    height: 220px;
+    width: 20%;
+    height: 100%;
     background-color: darkgrey;
 }
 
@@ -193,6 +203,7 @@ section.blogSection{
 
 .blogPlacemat-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 900px;
 }
@@ -211,7 +222,7 @@ footer{
     background: #212121;
     bottom: 0px;
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 .footer-container{
@@ -230,7 +241,7 @@ ul.footer-ul{
 
 ul.footer-ul li{
     margin: 0;
-    color: ;
+    color: white;
 }
 
 ul.inner-list{

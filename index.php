@@ -4,7 +4,7 @@ include '/resources/dbconn.php';
 ?>
 <html>
 <head>
-    <title> Eoin J S Designs | Landing </title>
+    <title>Eoin J S Designs</title>
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
     <link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">
     

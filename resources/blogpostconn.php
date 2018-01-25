@@ -13,12 +13,13 @@ function Connection(){
         return $conn;
     }
 }
-    $target     =$_POST['target'];
-    $title      =$_POST['title'];
-    $subtitle   =$_POST['subtitle'];
-    $author     =$_POST['author'];
-    $content    =$_POST['content'];
-    $usertype   =$_POST['usertype'];
+
+        $target     =$_POST['target'];
+        $title      =$_POST['title'];
+        $subtitle   =$_POST['subtitle'];
+        $author     =$_POST['author'];
+        $content    =$_POST['content'];
+        $usertype   =$_POST['usertype'];
 
         $_target    = mysqli_real_escape_string(Connection(),$target);
         $_title     = mysqli_real_escape_string(Connection(),$title);
@@ -27,21 +28,17 @@ function Connection(){
         $_content   = mysqli_real_escape_string(Connection(),$content);
         $_usertype  = mysqli_real_escape_string(Connection(),$usertype);
 
-
-        $insertquery = "INSERT INTO blogpost (target, title, subtitle, author, content, usertype) VALUES ('".$_target."','".$_title."','".$_subtitle."','".$_author."','".$_content."','".$_usertype."')";
-        $result = mysqli_query(Connection(),$insertquery);
-
-        $checktitlequery = "SELECT FROM blogpost WHERE title ='".$_title."'";
-        $checktitleresult = mysqli_query(Connection(),$checktitlequery);
-
-
-        if(mysqli_num_rows($checktitleresult) > 0){
-            echo "<p>Title has already been used before... Please chose a new one</p>";
+        $titlequery = "SELECT * FROM blogpost WHERE title = '".$_title."'";
+        $titleresult = mysqli_query(Connection(),$titlequery);
+    
+        if(mysqli_num_rows($titleresult) >= 1){
+            echo "<p>Title already in use...</p>";
         }else{
+            $insertquery = "INSERT INTO blogpost (target, title, subtitle, author, content, usertype) VALUES ('".$_target."','".$_title."','".$_subtitle."','".$_author."','".$_content."','".$_usertype."')";
+            $result = mysqli_query(Connection(),$insertquery);
+
             if($result){
-            echo "<p>details entered</p>";
-            }else{
-                echo "<p>Something went wrong</p>";
+                echo "<p>Log posted successfully</p>";
             }
         }
 mysqli_close(Connection());

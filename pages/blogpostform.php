@@ -2,24 +2,10 @@
 <?php include '../resources/dbconn.php';?>
 <html>
 <head>
-    <title> INSERT </title>
+    <title> Eoin J S Designs | Blog Post </title>
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/blogpost.css" />
     <link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">
-    
-    <script type="javascript/jquery">
-    $(document).on('submit', '#blogpostform', function(e) {
-     $.ajax({
-        url: $(this).attr('action'),
-        type: $(this).attr('method'),
-        data: $(this).serialize(),
-        success: function(html) {
-        alert('ok');
-        }
-    });
-    e.preventDefault();
-});
-    </script>
 </head>
 <body>
     <header>

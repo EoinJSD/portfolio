@@ -19,7 +19,7 @@
                 <li><img id="thumbnail" width="200px" height="200px" src="/portfolio_website/portfolio/images/other/footer-profile-pic.png" /></li>
                 <li>
                     <div class="logo-container">
-                    <h1 class="logo">Eoin J S Designs</h1>
+                    <h1 class="logo">Designated Creator</h1>
                     </div>
                 </li>
             </ul>                

@@ -113,7 +113,8 @@ nav ul li a:hover{
 /*Main Container Styles*/
 
 section.topSection{
-    background: url(../images/Background-1.jpg) no-repeat center;
+    background: url(../images/bg-1.jpg) no-repeat center;
+    background-size: 100%;
     display: flex;
 	justify-content: center;
 	max-width: 100vw;
@@ -124,37 +125,25 @@ section.topSection{
 .content {
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: row-reverse; */
-    /*display: grid; */
+    /* flex-direction: row-reverse; */
+    /* display: grid; */
     width: 900px;
-    justify-content: flex-end;
-    /*border: solid #000;*/
-	/*border-width: 0px 1px 0px 1px; */
+    background-color: rgba(0,0,0,0.3);
+    justify-content: space-between;
+    /* border: solid #000; */
+    /* border-width: 0px 1px 0px 1px;*/
 }
 
 .content .parent{
     display: flex;
     flex-direction: column;
-	width: 45%;
+    align-items: center;
+    justify-content: center;
+	width: 49%;
 }
 
-.parent.p3{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    width: 95%;
-    margin-top: 10px;
-}
-
-.parent.p3 img{
-    height: 80px;
-    width: 80px;
-    margin: 0px 27px;
-}
-
-.content .parent .item{
-    display: flex;
-    align-content: center;
+.content .parent img{
+    height: 90%;
 }
 .parent .item-across{
     width: 100%;
@@ -194,8 +183,21 @@ section.wideSection{
 
 /* END | END */
 
-section.blogSection{
+section.blogSectionBlog{
     display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	max-width: 100vw;
+/* 	border: 1px solid #000; */
+}
+
+.blogPlacematBlog{
+    width: 900px;
+    padding: 0px 25px;
+}
+
+section.blogSection{
+    display: grid;
 	justify-content: center;
 	max-width: 100vw;
 /* 	border: 1px solid #000; */

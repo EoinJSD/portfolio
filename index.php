@@ -4,7 +4,7 @@ include '/resources/dbconn.php';
 ?>
 <html>
 <head>
-    <title>Eoin J S Designs</title>
+    <title>Designated Creator</title>
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
     <link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">
     
@@ -20,11 +20,7 @@ include '/resources/dbconn.php';
     <section class="topSection"><!-- Body Main Container -->
     <div class="content c1">
     <div class="parent p2">
-        <!--
-        <div class="item">
-            <img class="profile-pic" src="images/top-section/profile-pic-400x400.jpg" />
-        </div>
-        -->
+        <img class="profile-pic" src="images/top-section/profile-pic-400x400.jpg" />
     </div>
         
     <div class="parent p1">

@@ -2,7 +2,7 @@
 <?php include '../resources/dbconn.php';?>
 <html>
 <head>
-    <title> Eoin J S Designs | Blog Post </title>
+    <title>Designated Creator</title>
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/blogpost.css" />
     <link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">

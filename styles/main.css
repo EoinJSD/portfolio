@@ -14,6 +14,11 @@ h3{
     margin: 10px 5px 0px 0px;
 }
 
+h2.blogTitle{
+    font-family: Logo1;
+    font-size: 20pt;
+}
+
 body{
 	background-image: url(../images/Background-2.jpg);
     background-color: #212121;
@@ -41,7 +46,7 @@ nav{
 	display: flex;
 	width: 900px;
 	max-width: 900px;
-	padding: 0px 5px;
+	padding: 0px 0px;
 	justify-content: space-between;
     align-items: center;
 /* 	border: solid #000;
@@ -110,8 +115,9 @@ nav ul li a:hover{
 	/* color: rgb(0, 102, 204);
 	background-color: #fff; */
 }
-/*Main Container Styles*/
 
+
+/*Main Container Styles*/
 section.topSection{
     background: url(../images/bg-1.jpg) no-repeat center;
     background-size: 100%;
@@ -181,9 +187,8 @@ section.wideSection{
     background-color: dimgrey;
 }
 
-/* END | END */
-
-section.blogSectionBlog{
+/* BLOG Styles */
+section.blogSection{
     display: flex;
     flex-wrap: wrap;
 	justify-content: center;
@@ -191,28 +196,26 @@ section.blogSectionBlog{
 /* 	border: 1px solid #000; */
 }
 
-.blogPlacematBlog{
-    width: 900px;
-    padding: 0px 25px;
-}
-
-section.blogSection{
-    display: grid;
-	justify-content: center;
-	max-width: 100vw;
-/* 	border: 1px solid #000; */
-}
-
-.blogPlacemat-container{
+.blogContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 900px;
 }
 
-.blogPlacemat{
+.placemat-blog{
+    width: 900px;
+}
+
+.placemat-index{
     width: 450px;
-    padding: 0px 25px;
+    padding: 0px 15px;
+}
+
+a.readmore{
+    text-decoration: none;
+    color: #ff9148;
+    float: right;
 }
 
 /*Footer Styles*/

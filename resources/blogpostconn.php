@@ -16,28 +16,30 @@ function Connection(){
 
         $target     =$_POST['target'];
         $title      =$_POST['title'];
-        $subtitle   =$_POST['subtitle'];
+        $tags       =$_POST['tags'];
         $author     =$_POST['author'];
         $content    =$_POST['content'];
         $usertype   =$_POST['usertype'];
 
         $_target    = mysqli_real_escape_string(Connection(),$target);
         $_title     = mysqli_real_escape_string(Connection(),$title);
-        $_subtitle  = mysqli_real_escape_string(Connection(),$subtitle);
+        $_tags      = mysqli_real_escape_string(Connection(),$tags);
         $_author    = mysqli_real_escape_string(Connection(),$author);
         $_content   = mysqli_real_escape_string(Connection(),$content);
         $_usertype  = mysqli_real_escape_string(Connection(),$usertype);
 
         $titlequery = "SELECT * FROM blogpost WHERE title = '".$_title."'";
         $titleresult = mysqli_query(Connection(),$titlequery);
+$content
     
         if(mysqli_num_rows($titleresult) >= 1){
             echo "<p>Title already in use...</p>";
         }else{
-            $insertquery = "INSERT INTO blogpost (target, title, subtitle, author, content, usertype) VALUES ('".$_target."','".$_title."','".$_subtitle."','".$_author."','".$_content."','".$_usertype."')";
+            $insertquery = "INSERT INTO blogpost (target, title, tags, author, content, usertype) VALUES ('".$_target."','".$_title."','".$_tags."','".$_author."','".$_content."','".$_usertype."')";
             $result = mysqli_query(Connection(),$insertquery);
 
             if($result){
+                header('Location: /portfolio/pages/blogpostform.php');
                 echo "<p>Log posted successfully</p>";
             }
         }

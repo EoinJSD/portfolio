@@ -4,7 +4,7 @@ include '/resources/dbconn.php';
 ?>
 <html>
 <head>
-    <title>Designated Creator</title>
+    <title>Designated Designer</title>
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
     <link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">
     
@@ -48,17 +48,24 @@ include '/resources/dbconn.php';
 	</section>
 
     <section class="blogSection">
-    <div class="blogPlacemat-container">
-        <?php
-                
-        $sql = "SELECT id, target, title, subtitle, author, content, entrydate, usertype FROM blogpost";
+    <div class="blogContainer">
+        <?php      
+        $sql = "SELECT id, target, title, tags, author, content, entrydate, usertype FROM blogpost";
         $result = mysqli_query(OpenConnection(),$sql);
         
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_assoc($result)){
-                echo "<div class='blogPlacemat'><h1>" . $row["title"]. "</h1><p class='minimize'>" . $row["content"]. "<br><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p></div>";
+                
+                $string = "<div class='placemat-index'><h2 class='blogTitle'>" . $row["title"]. "</h2><p><span>" . $row["content"]. "<br><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p>";
+                
+                if (strlen($string) > 300) {
+                    $stringCut = substr($string, 0, 400);
+                    
+                    $string = substr($stringCut, 0, strrpos($stringCut, ' '))."...<a class='readmore' href='pages/blog.php'>Read More</a></div>";
+                 }
+                echo $string;
             }
-        } else{
+        }else{
             echo "0 Results";
         }
         
@@ -67,6 +74,7 @@ include '/resources/dbconn.php';
 
     </div>        
     </section>
+    
     <footer>
         <?php include_once('pages/inc/footer.inc.php') ?>
     </footer>

@@ -2,7 +2,7 @@
 <?php include '../resources/dbconn.php';?>
 <html>
 <head>
-    <title>Designated Creator</title>
+    <title>Designated Designer  </title>
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/blogpost.css" />
     <link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">
@@ -18,7 +18,7 @@
         
         <section class="leftside">
         <input type="text" name="title" placeholder="Title"/>
-        <input type="text" name="subtitle" placeholder="Subtitle"/>
+        <input type="text" name="tags" placeholder="Tags"/>
         <input type="text" name="author" placeholder="Author"/>
         <select name="target">
             <option disabled selected>Target</option>

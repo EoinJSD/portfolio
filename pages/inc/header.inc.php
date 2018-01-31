@@ -1,6 +1,6 @@
 <nav><!--Centered container for Logo and Links-->
     <div class="logo-container">
-    <h1 class="logo">Eoin J S Designs</h1>
+    <h1 class="logo">Jimple</h1>
     </div>
     <div class="links-container">
     <ul class="links">

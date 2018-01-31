@@ -4,39 +4,11 @@ include '/resources/dbconn.php';
 ?>
 <html>
 <head>
-    <title> Eoin J S Designs | Landing </title>
+    <title>Designated Designer</title>
     <link rel="stylesheet" href="/portfolio_website/portfolio/styles/main.css" />
     <link rel="shortcut icon" href="/portfolio_website/portfolio/images/favicon/favicon.ico">
     
     <script src="jquery-3.2.1.min.js">
-    jQuery(function(){
-
-    var minimized_elements = $('p.minimize');
-    
-    minimized_elements.each(function(){    
-        var t = $(this).text();        
-        if(t.length < 100) return;
-        
-        $(this).html(
-            t.slice(0,100)+'<span>... </span><a href="#" class="more">More</a>'+
-            '<span style="display:none;">'+ t.slice(100,t.length)+' <a href="#" class="less">Less</a></span>'
-        );
-        
-    }); 
-    
-    $('a.more', minimized_elements).click(function(event){
-        event.preventDefault();
-        $(this).hide().prev().hide();
-        $(this).next().show();        
-    });
-    
-    $('a.less', minimized_elements).click(function(event){
-        event.preventDefault();
-        $(this).parent().hide().prev().show().prev().show();    
-    });
-
-});
-    
     </script>
 </head>
 <body>
@@ -48,11 +20,7 @@ include '/resources/dbconn.php';
     <section class="topSection"><!-- Body Main Container -->
     <div class="content c1">
     <div class="parent p2">
-        <!--
-        <div class="item">
-            <img class="profile-pic" src="images/top-section/profile-pic-400x400.jpg" />
-        </div>
-        -->
+        <img class="profile-pic" src="images/top-section/profile-pic-400x400.jpg" />
     </div>
         
     <div class="parent p1">
@@ -75,22 +43,29 @@ include '/resources/dbconn.php';
 	
 	<section class="wideSection">
 	<div class="wide-content-1">
-<h1>Images</h1>
+            <h1>Images</h1>
 	</div>
 	</section>
 
     <section class="blogSection">
-    <div class="blogPlacemat-container">
-        <?php
-                
-        $sql = "SELECT id, target, title, subtitle, author, content, entrydate, usertype FROM blogpost";
+    <div class="blogContainer">
+        <?php      
+        $sql = "SELECT id, target, title, tags, author, content, entrydate, usertype FROM blogpost";
         $result = mysqli_query(OpenConnection(),$sql);
         
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_assoc($result)){
-                echo "<div class='blogPlacemat'><h1>" . $row["title"]. "</h1><p class='minimize'>" . $row["content"]. "<br><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p></div>";
+                
+                $string = "<div class='placemat-index'><h2 class='blogTitle'>" . $row["title"]. "</h2><p><span>" . $row["content"]. "<br><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p>";
+                
+                if (strlen($string) > 300) {
+                    $stringCut = substr($string, 0, 400);
+                    
+                    $string = substr($stringCut, 0, strrpos($stringCut, ' '))."...<a class='readmore' href='pages/blog.php'>Read More</a></div>";
+                 }
+                echo $string;
             }
-        } else{
+        }else{
             echo "0 Results";
         }
         
@@ -99,6 +74,7 @@ include '/resources/dbconn.php';
 
     </div>        
     </section>
+    
     <footer>
         <?php include_once('pages/inc/footer.inc.php') ?>
     </footer>

@@ -3,11 +3,8 @@
 /*Global Styles*/
 /*Fonts*/
 @font-face {
-    font-family: 'Grogo'; /*font name*/
-    src: url('fonts/Vendetta.otf'); /*URL to font*/
-	
-	font-family: 'Logo1';
-	src: url('fonts/YouthBeauty.otf');
+  font-family: 'MarvaleScript'; /*font name*/
+  src: url('fonts/mervale-script.regular.ttf'); /*URL to font*/
 }
 
 h3{
@@ -20,7 +17,7 @@ h2.blogTitle{
 }
 
 body{
-	background-image: url(../images/Background-2.jpg);
+	background-image: url(../images/Background-2-1.jpg);
     background-color: #212121;
     background-size: cover;
 	font-family: verdana;
@@ -53,17 +50,18 @@ nav{
 	border-width: 0px 1px 0px 1px; */
 }
 
-h1.logo{
-	font-family: Logo1;
-	font-size: 2em;
+a.logo{
+	font-family: MarvaleScript;
+	font-size: 40pt;
 	padding: 0px;
 	margin: 0px;
 	color: #fff;
 	text-shadow: #000 -2px 1px 4px;
+  text-decoration: none;
 }
 
 h2.logo{
-	font-family: Logo1;
+	font-family: MarvaleScript;
 	font-size: 2em;
 	padding: 0px;
 	margin: 0px;
@@ -79,7 +77,8 @@ h2.logo{
 } */
 
 .logo-container{
-	max-width: 260px;
+	display: flex;
+  justify-content: center;
 }
 
 .links-container{
@@ -97,21 +96,24 @@ ul.links {
 }
 
 ul.links li{
-	margin: 0px 10px;
+	margin: 0px 0px;
+  width: 100px;
 }
 
 ul.links li a{
-    display: block;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
+  display: flex;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 nav ul li a:hover{
 	color: #3b240e; /*Brown*/
 	background-color: #ff8d2a; /*Orange*/
 	transition: .3s;
-	
+
 	/* color: rgb(0, 102, 204);
 	background-color: #fff; */
 }
@@ -223,7 +225,7 @@ a.readmore{
 footer{
     display: flex;
     justify-content: center;
-	border-top: 1px solid #ff9148;    
+    border-top: 1px solid #ff9148;
     background: #212121;
     bottom: 0px;
     margin: 0;
@@ -255,6 +257,12 @@ ul.inner-list{
     padding: 0px;
 }
 
+span.logo{
+  font-family: MarvaleScript;
+  font-size: 30pt;
+  color: #fff;
+}
+
 /*other*/
 
 .hide{
@@ -268,4 +276,3 @@ ul.inner-list{
 .active {
     background-color: #4CAF50;
 } */
-

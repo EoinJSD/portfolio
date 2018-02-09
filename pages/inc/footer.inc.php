@@ -19,10 +19,10 @@
                 <li><img id="thumbnail" width="200px" height="200px" src="/portfolio_website/portfolio/images/other/footer-profile-pic.png" /></li>
                 <li>
                     <div class="logo-container">
-                    <h1 class="logo">Designated Creator</h1>
+                      <span class="logo">Eóin J S Dolan</span>
                     </div>
                 </li>
-            </ul>                
+            </ul>
         </li>
     </ul>
-</div>   
+</div>

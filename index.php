@@ -7,21 +7,23 @@
 
     <section class="topSection"><!-- Body Main Container -->
       <div class="content c1">
-      <div class="parent p2">
+      <div class="parent p1">
         <img class="profile-pic" src="images/top-section/profile-pic-400x400.jpg" />
       </div>
-      <div class="parent p1">
+      <div class="parent p2">
       <div class="bio">
-        <p>It has survived not only five centuries, but also the leap into electronic
-        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-        release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+      <p>
+        It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged.
+      </p>
+      <p>
+        Also the leap into electronic typesetting, remaining essentially unchanged. and more recently with
         desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-        <p>Quo affert adipisci facilisis te, nec movet consectetuer et. Eum vidisse prompta maiorum
-        id. His altera civibus honestatis te, ut quem delenit petentium vel. At nec eius denique,
-        tota ipsum eligendi ne mel, modo dicam percipit sea no. Vix novum nusquam id, te sonet graeci
-        expetenda has, illum virtute vituperata in duo.
-        </p>
+      </p>
+      <p>
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
       </div>
       </div>
       </div>
@@ -41,12 +43,9 @@
 
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_assoc($result)){
-
                 $string = "<div class='placemat-index'><h2 class='blogTitle'>" . $row["title"]. "</h2><p><span>" . $row["content"]. "<br><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p>";
-
                 if (strlen($string) > 300) {
                     $stringCut = substr($string, 0, 400);
-
                     $string = substr($stringCut, 0, strrpos($stringCut, ' '))."...<a class='readmore' href='blog.php'>Read More</a></div>";
                  }
                 echo $string;

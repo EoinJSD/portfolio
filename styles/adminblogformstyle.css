@@ -2,6 +2,7 @@ section.BlogSection{
     width: 100vw;
     justify-content: center;
     display: grid;
+    margin: 0px 0px 20px 0px;
 }
 
 textarea{
@@ -25,12 +26,12 @@ input, select {
     font-family: verdana;
 }
 
-form.blogpostform{
+form.adminblogform{
     width: 800px;
     display: flex;
     /* justify-content: csenter; */
     justify-content: space-between;
-} 
+}
 
 section.leftside{
     flex-direction: column;
@@ -47,7 +48,7 @@ section.rightside{
     width: 500px;
 }
 
-form.blogpostform h2{
+form.adminblogform h2{
     font-family: verdana;
     font-size: 16pt;
     font-weight: lighter;

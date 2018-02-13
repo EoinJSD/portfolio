@@ -4,16 +4,15 @@ function Connection(){
     $user = "root"; //dbuser
     $pass = ""; //dbpassword
     $name = "test"; //dbname
-    
+
     $conn = mysqli_connect($host,$user,$pass,$name);
-    
+
     if($conn === false){
         echo "Could not connect to DB: " . mysqli_connect_error() . PHP_EOL;
     }else{
         return $conn;
     }
 }
-
         $target     =$_POST['target'];
         $title      =$_POST['title'];
         $tags       =$_POST['tags'];
@@ -31,7 +30,7 @@ function Connection(){
         $titlequery = "SELECT * FROM blogpost WHERE title = '".$_title."'";
         $titleresult = mysqli_query(Connection(),$titlequery);
 $content
-    
+
         if(mysqli_num_rows($titleresult) >= 1){
             echo "<p>Title already in use...</p>";
         }else{
@@ -39,7 +38,7 @@ $content
             $result = mysqli_query(Connection(),$insertquery);
 
             if($result){
-                header('Location: /portfolio/pages/blogpostform.php');
+                header('Location: http://localhost/portfolio_website/portfolio/');
                 echo "<p>Log posted successfully</p>";
             }
         }

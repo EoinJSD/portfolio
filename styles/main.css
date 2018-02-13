@@ -106,7 +106,7 @@ nav ul li a:hover{
 
 
 /*Main Container Styles*/
-section.topSection{
+section.LandingZone{
   background:  linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
@@ -118,7 +118,7 @@ section.topSection{
   height: 30vw;
 }
 
-.content {
+.bio {
   display: flex;
   flex-wrap: wrap;
   width: 900px;
@@ -126,7 +126,7 @@ section.topSection{
   z-index: 0;
 }
 
-.content .parent{
+.bio .bio-item{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,33 +134,21 @@ section.topSection{
 	width: 49%;
 }
 
-.content .parent img{
-  height: 90%;
+.bio .bio-item img{
+  height: 70%;
 }
-.parent .item-across{
+.bio .item-across{
   width: 100%;
 }
 
-.c1{
-	margin: 10px 0px;
-}
-
-.c2{
-	background-color: #f5f5f5;
-	margin: 10px 0;
-}
-
-
-
 /* Wide Section | Image Display Box */
-
-section.wideSection{
+section.ShowOff{
     display: grid;
     height: 284px;
     background-color: #212121;
 }
 
-.wide-content-1{
+.showoff-slider{
     display: flex;
     flex-wrap: wrap;
 }
@@ -220,9 +208,16 @@ a.readmore{
   }
 
 }
+/* Skills styles */
+section.Skills{
+  display: grid;
+  justify-content: center;
+  height: auto;
+}
+
+
 
 /*Footer Styles*/
-
 footer{
     display: flex;
     justify-content: center;

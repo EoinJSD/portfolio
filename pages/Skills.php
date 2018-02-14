@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="/portfolio_website/portfolio/styles/skillstyle.css" />
 
 <div class="skillSection">
-    <h1>jQuery & CSS3 Skills Bar</h1>
-
     <div class="skillbar clearfix " data-percent="20%">
     <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
     <div class="skillbar-bar" style="background: #e67e22;"></div>
@@ -47,3 +45,4 @@
 
     <p><strong>SOURCE :</strong> http://w3lessons.info/2013/06/04/skill-bar-with-jquery-css3/</p>
 </div>
+<script type="text/javascript" src="scripts/skillscript.js"></script>

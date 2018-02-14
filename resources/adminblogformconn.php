@@ -29,17 +29,16 @@ function Connection(){
 
         $titlequery = "SELECT * FROM blogpost WHERE title = '".$_title."'";
         $titleresult = mysqli_query(Connection(),$titlequery);
-$content
 
         if(mysqli_num_rows($titleresult) >= 1){
-            echo "<p>Title already in use...</p>";
+            echo 'Title already in use...';
         }else{
             $insertquery = "INSERT INTO blogpost (target, title, tags, author, content, usertype) VALUES ('".$_target."','".$_title."','".$_tags."','".$_author."','".$_content."','".$_usertype."')";
             $result = mysqli_query(Connection(),$insertquery);
 
             if($result){
-                header('Location: http://localhost/portfolio_website/portfolio/');
-                echo "<p>Log posted successfully</p>";
+                header('Location: http://localhost/portfolio_website/portfolio/adminblogform.php');
+                echo 'Log posted successfully';
             }
         }
 mysqli_close(Connection());

@@ -16,7 +16,7 @@
         </li>
         <li>
             <ul class="inner-list">
-                <li><img id="thumbnail" width="200px" height="200px" src="/portfolio_website/portfolio/images/other/footer-profile-pic.png" /></li>
+                <li><img id="thumbnail" width="100px" height="100px" src="/portfolio_website/portfolio/images/other/footer-profile-pic.png" /></li>
                 <li>
                     <div class="logo-container">
                       <span class="logo">Eóin J S Dolan</span>

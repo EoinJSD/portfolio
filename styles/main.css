@@ -11,11 +11,6 @@ h3{
   margin: 10px 5px 0px 0px;
 }
 
-h2.blogTitle{
-  font-family: Logo1;
-  font-size: 20pt;
-}
-
 body{
 	background-image: url(../images/Background-2-1.jpg);
   background-color: #212121;
@@ -172,11 +167,30 @@ section.blogSection{
 /* 	border: 1px solid #000; */
 }
 
+section.blogSection#index{
+  padding: 60px 0px;
+}
+
+section.blogSection p{
+  margin: 0px 0px 10px 0px;
+}
+
+h2.blogTitle{
+  font-family: helvetica;
+  font-size: 15pt;
+}
+
 .blogContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+}
+
+#scroll{
+  padding: 0px 10px 0px 0px;
+  overflow: auto;
+  max-height: 350px;
 }
 
 .placemat-blog{
@@ -184,14 +198,34 @@ section.blogSection{
 }
 
 .placemat-index{
-    width: 450px;
-    padding: 0px 15px;
+    width: 430px;
+    padding: 0px;
 }
 
 a.readmore{
     text-decoration: none;
     color: #ff9148;
     float: right;
+}
+
+/* scrollbar style*/
+
+#scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #212121;
+}
+
+#scroll::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #212121;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+	background-color: #ff9148;
+  border-radius: 5px;
 }
 
 
@@ -213,6 +247,7 @@ section.Skills{
   display: grid;
   justify-content: center;
   height: auto;
+  padding: 60px 0px;
 }
 
 

@@ -1,4 +1,3 @@
-<div class="blogContainer">
     <?php
     $uriCheck = $_SERVER['REQUEST_URI'];
     $blogUri = '/portfolio_website/portfolio/blog.php';
@@ -29,4 +28,3 @@
 
     CloseConnection(OpenConnection());
     ?>
-</div>

@@ -5,7 +5,7 @@
 <body>
     <header><?php include_once('pages/inc/header.inc.php') ?></header>
 
-    <section class="blogSection"><?php include_once('pages/BlogSection.php'); ?></section>
+    <section class="blogSection"><div class="blogContainer"><?php include_once('pages/BlogSection.php'); ?></div></section>
 
     <footer><?php include_once('pages/inc/footer.inc.php') ?></footer>
 </body>

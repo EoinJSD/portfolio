@@ -8,7 +8,7 @@
 
   	<section class="ShowOff"><?php include_once('pages/ShowOff.php') ?></section>
 
-    <section class="blogSection"><?php include_once('pages/BlogSection.php') ?></section>
+    <section class="blogSection" id="index"><div class="blogContainer" id="scroll"><?php include_once('pages/BlogSection.php') ?></div></section>
 
     <section class="Skills"><?php include_once('pages/Skills.php') ?></section>
 

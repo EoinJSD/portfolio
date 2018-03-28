@@ -1,6 +1,7 @@
 <nav><!--Centered container for Logo and Links-->
   <div class="logo-container">
-      <a href="/portfolio_website/portfolio/index.php" class="logo">Jimple</a>
+      <a href="/portfolio_website/portfolio/index.php" class="logo">@EoinJS</a>
+      <span>let's keep it simple</span>
   </div>
     <div class="links-container">
     <ul class="links">

@@ -15,7 +15,7 @@ body{
 	background-image: url(../images/Background-2-1.jpg);
   background-color: #212121;
   background-size: cover;
-	font-family: verdana;
+	font-family: Courier;
 	font-size: 12pt;
   color: #fff;
   margin: 0;
@@ -27,7 +27,7 @@ body{
 header{
 	display: flex;
 	border-bottom: 1px solid #ff9148;
-	height: 50px;
+	height: 52px;
 	max-width: 100vw;
 	justify-content: center;
 }
@@ -42,10 +42,10 @@ nav{
 }
 
 a.logo{
-	font-family: MarvaleScript;
-	font-size: 40pt;
+	font-family: Courier;
+	font-size: 32pt;
 	padding: 0px;
-	margin: 0px;
+	margin: -8px 0px -10px 0px;
 	color: #fff;
 	text-shadow: #000 -2px 1px 4px;
   text-decoration: none;
@@ -62,8 +62,13 @@ h2.logo{
 }
 
 .logo-container{
-	display: flex;
-  justify-content: center;
+	display: grid;
+  justify-items: right;
+}
+
+.logo-container span {
+    font-size: 11pt;
+    font-family: courier;
 }
 
 .links-container{
@@ -159,6 +164,7 @@ section.ShowOff{
 }
 
 /* BLOG Styles */
+
 section.blogSection{
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +187,7 @@ h2.blogTitle{
 }
 
 .blogContainer{
+  background-color: #262626;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -249,8 +256,6 @@ section.Skills{
   height: auto;
   padding: 60px 0px;
 }
-
-
 
 /*Footer Styles*/
 footer{

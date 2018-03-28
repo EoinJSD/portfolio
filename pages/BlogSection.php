@@ -10,9 +10,9 @@
         while($row = mysqli_fetch_assoc($result)){
           //check the page uri and use the correct element class name
             if($uriCheck == $blogUri){
-              echo "<div class='placemat-blog'><h2 class='blogTitle'>" . $row["title"]. "</h2><p><span>" . $row["content"]. "<br><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p></div>";
+              echo "<div class='placemat-blog'><h2 class='blogTitle'>" . $row["title"]. "</h2><p>" . $row["content"]. "</p><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p></div>";
             }else{
-              $string = "<div class='placemat-index'><h2 class='blogTitle'>" . $row["title"]. "</h2><p><span>" . $row["content"]. "<br><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p>";
+              $string = "<div class='placemat-index'><h2 class='blogTitle'>" . $row["title"]. "</h2><p>" . $row["content"]. "</p><span>" . $row["author"]. " - " . $row["entrydate"]. "</span></p>";
 
               if (strlen($string) > 200) {
                   $stringCut = substr($string, 0, 300);

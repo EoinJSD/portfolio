@@ -1,36 +1,42 @@
+.skillbox{
+  display: grid;
+  justify-items: center;
+}
+
 .skillbar{
-  width: 50px;
-  background: #eee;
-  height: 500px;
+  position: relative;
+  width: 30px;
+  height: 160px;
   border-radius: 3px;
-  transition: 0.1s ease-out;
+  transition: 0.1s cubic-bezier(0.17, 1.39, 0.86, -0.45);
   transition-property: height, background-color;
 }
 
 .skillbar-title{
+  width: auto;
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 10pt;
   color: #fff;
   background: #212121;
   border-radius: 3px 3px 0px 0px;
 }
 
 .skillbar-bar{
+  position: absolute;
+  bottom: 0;
   width: 100%;
   background: #ff8d2a;
   border-radius: 0px 0px 3px 3px;
 }
 
 .skillbar-bar-percent{
-  font-size: 12pt;
+  font-size: 10pt;
 
 }
 
-h1{
-  font-family: helvetica, arial, sans-serif;
-  text-align: center;
-  font-size: 35pt;
-  margin-top: 40px;
-  color: #fff;
-  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7), 5px 7px 0px rgba(0,0,0,0.1);
+div.topic{
+  width: 900px; height: auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
 }

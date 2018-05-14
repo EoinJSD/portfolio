@@ -1,47 +1,173 @@
+
+
+<div class="carousel">
+<h1 class="experience">Experience</h1>
+<!-- 1 -->
+<div class="topic-container">
+<div class="topic, active">
+    <div class="topic-icon">Design</div>
+    <div class="skill-container">
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Photoshop</span></div>
+        <div class="skillbar clearfix" data-percent="85%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Indesign</span></div>
+        <div class="skillbar clearfix" data-percent="60%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Illustrator</span></div>
+        <div class="skillbar clearfix" data-percent="70%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>AfterEffects</span></div>
+        <div class="skillbar clearfix" data-percent="40%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Drawing</span></div>
+        <div class="skillbar clearfix" data-percent="60%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Invision</span></div>
+        <div class="skillbar clearfix" data-percent="75%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- -->
+<!-- 2 -->
+<div class="topic, hidden">
+    <div class="topic-icon">Web</div>
+    <div class="skill-container">
+      <div class="skillbox">
+        <div class="skillbar-title"><span>HTML</span></div>
+        <div class="skillbar clearfix" data-percent="100%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>CSS</span></div>
+        <div class="skillbar clearfix" data-percent="100%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>JavaScript</span></div>
+        <div class="skillbar clearfix" data-percent="75%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Angular JS</span></div>
+        <div class="skillbar clearfix" data-percent="70%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>PHP</span></div>
+        <div class="skillbar clearfix" data-percent="75%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Laravel</span></div>
+        <div class="skillbar clearfix" data-percent="50%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Zend</span></div>
+        <div class="skillbar clearfix" data-percent="40%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Sass</span></div>
+        <div class="skillbar clearfix" data-percent="80%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Wordpress</span></div>
+        <div class="skillbar clearfix" data-percent="75%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- -->
+<!-- 3 -->
+<div class="topic, hidden">
+    <div class="topic-icon">3D Modelling</div>
+    <div class="skill-container">
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Unity 3D</span></div>
+        <div class="skillbar clearfix" data-percent="80%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>SketchUp</span></div>
+        <div class="skillbar clearfix" data-percent="95%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Maya</span></div>
+        <div class="skillbar clearfix" data-percent="60%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Blender</span></div>
+        <div class="skillbar clearfix" data-percent="60%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+
+      <div class="skillbox">
+        <div class="skillbar-title"><span>Unity 3D</span></div>
+        <div class="skillbar clearfix" data-percent="75%">
+          <div class="skillbar-bar"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- -->
+  <ul class="controls">
+    <li><a class="prev" href="#">&#8637;</a></li>
+    <li>&bull;</li>
+    <li><a class="next" href="#">&#8641;</a></li>
+  </ul>
+<!-- -->
+</div>
+
 <script type="text/javascript" src="./scripts/progress.js"></script>
-
-  <div class="skillbar clearfix" data-percent="60%">
-    <div class="skillbar-title"><span>JavaScript</span></div>
-    <div class="skillbar-bar"></div>
-    <div class="skillbar-bar-percent">60%</div>
-  </div>
-
-  <div class="skillbar clearfix" data-percent="90%">
-    <div class="skillbar-title"><span>HTML</span></div>
-    <div class="skillbar-bar"></div>
-    <div class="odometer">90%</div>
-  </div>
-
-  <div class="skillbar clearfix" data-percent="90%">
-    <div class="skillbar-title"><span>CSS</span></div>
-    <div class="skillbar-bar"></div>
-    <div class="skillbar-bar-percent">90%</div>
-  </div>
-
-  <div class="skillbar clearfix" data-percent="60%">
-    <div class="skillbar-title"><span>PHP</span></div>
-    <div class="skillbar-bar"></div>
-    <div class="skillbar-bar-percent">60%</div>
-  </div>
-
-  <div class="skillbar clearfix" data-percent="40%">
-    <div class="skillbar-title"><span>Laravel</span></div>
-    <div class="skillbar-bar"></div>
-    <div class="skillbar-bar-percent">40%</div>
-  </div>
-
-  <div class="skillbar clearfix" data-percent="50%">
-    <div class="skillbar-title"><span>PHP</span></div>
-    <div class="skillbar-bar"></div>
-    <div class="skillbar-bar-percent">50%</div>
-  </div>
-
-</div>
-
-<div class="topic"><span>Graphic Design</span>
-
-</div>
-
-<div class="topic"><span>Gaming & 3D Modelling</span>
-
-</div>

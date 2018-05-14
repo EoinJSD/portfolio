@@ -1,3 +1,3 @@
 <div class="showoff-slider">
-  <h1>Images</h1>
+  <h1>Pending</h1>
 </div>

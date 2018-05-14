@@ -1,13 +1,8 @@
-.skillbox{
-  display: grid;
-  justify-items: center;
-}
-
-.skillbar{
+  .skillbar{
   position: relative;
-  width: 30px;
-  height: 160px;
-  border-radius: 3px;
+  width: 700px;
+  height: 20px;
+  /*border-radius: 3px;*/
   transition: 0.1s cubic-bezier(0.17, 1.39, 0.86, -0.45);
   transition-property: height, background-color;
 }
@@ -17,26 +12,70 @@
   font-weight: bold;
   font-size: 10pt;
   color: #fff;
-  background: #212121;
-  border-radius: 3px 3px 0px 0px;
+  /*background: #212121;*/
+  /*border-radius: 3px 3px 0px 0px;*/
 }
 
 .skillbar-bar{
   position: absolute;
   bottom: 0;
-  width: 100%;
+  padding-right: 5px;
+  height: 100%;
   background: #ff8d2a;
-  border-radius: 0px 0px 3px 3px;
+  /*border-radius: 0px 0px 3px 3px;*/
 }
 
 .skillbar-bar-percent{
   font-size: 10pt;
-
 }
 
+
+
+/* carousel and Container*/
 div.topic{
-  width: 900px; height: auto;
+  max-width: 1000px;
+  height: auto;
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skill-container{
+  height: 350px;
+  display: grid;
+  justify-items: space-between;
+}
+
+.topic-icon{
+  height: auto;
+  width: 200px;
+}
+
+ul.controls{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.controls li{
+  display: inline;
+}
+ul.controls li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+div.carousel{
+  display: grid;
+  justify-items: center;
+}
+
+.experience{
+  margin: 0;
+}
+
+.active{
+  display: flex;
+}
+
+.hidden{
+  display: none;
 }

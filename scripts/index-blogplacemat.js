@@ -12,7 +12,7 @@ jQuery(function(){
         );
 
     });
-    
+
     $('a.more', minimized_elements).click(function(event){
         event.preventDefault();
         $(this).hide().prev().hide();

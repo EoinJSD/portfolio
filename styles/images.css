@@ -1,13 +1,13 @@
 * {box-sizing: border-box;}
 
 .showoff-slider{
-  width: 100%;
+  width: 1900px;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .showoff-slider img{
-  width: 373px;
+  width: 380px;
   height: 300px;
 }

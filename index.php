@@ -12,6 +12,8 @@
 
     <section class="blogSection" id="index"><div class="blogContainer" id="scroll"><?php include_once('pages/BlogSection.php') ?></div></section>
 
+    <section class="WorkExperience"><?php include_once('pages/WorkExperience.php') ?></section>
+
     <footer><?php include_once('pages/inc/footer.inc.php') ?></footer>
 </body>
 </html>

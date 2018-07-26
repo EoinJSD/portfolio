@@ -1,11 +1,10 @@
 
 
 <div class="carousel">
-<h1 class="experience">Experience</h1>
+<h1 class="experience">Skills</h1>
 <!-- 1 -->
 <div class="topic-container">
 <div class="topic, active">
-    <div class="topic-icon">Design</div>
     <div class="skill-container">
       <div class="skillbox">
         <div class="skillbar-title"><span>Photoshop</span></div>
@@ -53,7 +52,6 @@
 <!-- -->
 <!-- 2 -->
 <div class="topic, hidden">
-    <div class="topic-icon">Web</div>
     <div class="skill-container">
       <div class="skillbox">
         <div class="skillbar-title"><span>HTML</span></div>
@@ -122,7 +120,6 @@
 <!-- -->
 <!-- 3 -->
 <div class="topic, hidden">
-    <div class="topic-icon">3D Modelling</div>
     <div class="skill-container">
       <div class="skillbox">
         <div class="skillbar-title"><span>Unity 3D</span></div>
@@ -163,9 +160,11 @@
 </div>
 <!-- -->
   <ul class="controls">
-    <li><a class="prev" href="#">&#8637;</a></li>
-    <li>&bull;</li>
-    <li><a class="next" href="#">&#8641;</a></li>
+    <li><a class="next" href="#">Web Development</a></li>
+    <li>&#9830;</li>
+    <li><a class="next" href="#">Graphic Design</a></li>
+    <li>&#9830;</li>
+    <li><a class="next" href="#">3D Modelling</a></li>
   </ul>
 <!-- -->
 </div>

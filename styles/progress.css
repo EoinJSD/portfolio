@@ -1,16 +1,21 @@
+* {box-sizing: border-box;}
+
   .skillbar{
   position: relative;
-  width: 700px;
+  width: 1000px;
   height: 20px;
+  border-right: solid 1px #fff;
   /*border-radius: 3px;*/
   transition: 0.1s cubic-bezier(0.17, 1.39, 0.86, -0.45);
   transition-property: height, background-color;
+  background-color: rgb(38,38,38,0.8);
+
 }
 
 .skillbar-title{
   width: auto;
-  font-weight: bold;
-  font-size: 10pt;
+  font-weight: normal;
+  font-size: 14pt;
   color: #fff;
   /*background: #212121;*/
   /*border-radius: 3px 3px 0px 0px;*/
@@ -39,7 +44,7 @@ div.topic{
   flex-wrap: wrap;
 }
 .skill-container{
-  height: 350px;
+  height: 450px;
   display: grid;
   justify-items: space-between;
 }
@@ -52,7 +57,7 @@ div.topic{
 ul.controls{
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 20px 0px;
 }
 
 ul.controls li{
@@ -62,6 +67,9 @@ ul.controls li a{
   color: #fff;
   text-decoration: none;
 }
+ul.controls li a:hover{
+  color: grey;
+}
 
 div.carousel{
   display: grid;
@@ -70,6 +78,7 @@ div.carousel{
 
 .experience{
   margin: 0;
+  padding: 20px 0px;
 }
 
 .active{

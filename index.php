@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include '/resources/dbconn.php'; ?>
+<?php include 'resources/dbconn.php'; ?>
 <html>
     <head><?php include_once('pages/inc/head.inc.php')?></head>
 <body>
@@ -11,6 +11,8 @@
     <section class="ShowOff"><?php include_once('pages/ShowOff.php') ?></section>
 
     <section class="blogSection" id="index"><div class="blogContainer" id="scroll"><?php include_once('pages/BlogSection.php') ?></div></section>
+
+    <section class="WorkExperience"><?php include_once('pages/WorkExperience.php') ?></section>
 
     <footer><?php include_once('pages/inc/footer.inc.php') ?></footer>
 </body>

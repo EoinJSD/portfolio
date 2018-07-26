@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include '/resources/dbconn.php';
+include 'resources/dbconn.php';
 ?>
 <html>
   <head><?php include_once('pages/inc/head.inc.php')?></head>

@@ -26,10 +26,10 @@ body{
 /*Header Styles*/
 header{
 	display: flex;
-	border-bottom: 1px solid #ff9148;
-	height: 52px;
+	height: 51px;
 	max-width: 100vw;
 	justify-content: center;
+  border-bottom: 1px solid #ff9148;
 }
 
 nav{
@@ -117,12 +117,13 @@ section.LandingZone{
   max-width: 100vw;
   max-height: 645px;
   padding: 150px 0px;
+  border-bottom: 1px solid #ff9148;;
 }
 
 .bio {
   display: flex;
   flex-wrap: wrap;
-  width: 900px;
+  width: 1000px;
   justify-content: space-between;
   z-index: 0;
 }
@@ -132,12 +133,12 @@ section.LandingZone{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 49%;
   position: relative;
-	width: 49%;
 }
 
 .bio .bio-item img{
-  height: 250px;
+  height: 300px;
 }
 .bio .item-across{
   width: 100%;
@@ -150,7 +151,16 @@ section.LandingZone{
 
 .bio .bio-text p{
   margin: 0;
-  font-size: 11pt;
+  font-size: 13pt;
+}
+
+/* Skills styles */
+section.Skills{
+  display: grid;
+  justify-content: center;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 /* Wide Section | Image Display Box */
@@ -159,12 +169,6 @@ section.ShowOff{
     justify-content: center;
     height: 300px;
     background-color: #212121;
-}
-
-.showoff-slider{
-    max-width: 1600px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .box{
@@ -189,6 +193,7 @@ section.blogSection{
 
 section.blogSection#index{
   padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 section.blogSection p{
@@ -205,7 +210,7 @@ h2.blogTitle{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 900px;
+  width: 1000px;
 }
 
 #scroll{
@@ -215,11 +220,11 @@ h2.blogTitle{
 }
 
 .placemat-blog{
-    width: 900px;
+    width: 1000px;
 }
 
 .placemat-index{
-    width: 430px;
+    width: 480px;
     padding: 0px;
 }
 
@@ -249,26 +254,9 @@ a.readmore{
   border-radius: 5px;
 }
 
-
-/* mbile Styles */
-@media screen and (max-width: 800px){
-
-  .blogContainer {
-      display: flex;
-      /* align-items: center; */
-      flex-wrap: wrap;
-      /* flex-flow: column; */
-      justify-content: center;
-      width: 900px;
-  }
-
-}
-/* Skills styles */
-section.Skills{
-  display: grid;
-  justify-content: center;
-  height: auto;
-  padding-top: 150px;
+/* Work Experience Styles */
+section.WorkExperience{
+  background-color: #212121;
 }
 
 /*Footer Styles*/
@@ -278,7 +266,6 @@ footer{
     border-top: 1px solid #ff9148;
     background: #212121;
     bottom: 0px;
-    margin: 150px 0px 0px 0px;
     padding: 10px 0 10px 0;
 }
 
@@ -326,3 +313,18 @@ span.logo{
 .active {
     background-color: #4CAF50;
 } */
+
+
+/* mbile Styles */
+@media screen and (max-width: 800px){
+
+  .blogContainer {
+      display: flex;
+      /* align-items: center; */
+      flex-wrap: wrap;
+      /* flex-flow: column; */
+      justify-content: center;
+      width: 900px;
+  }
+
+}

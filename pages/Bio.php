@@ -1,6 +1,6 @@
 <div class="bio">
   <div class="bio-item">
-    <img class="bio-pic" src="images/top-section/profile-pic-400x400.jpg" />
+    <img class="bio-pic" src="images/top-section/profile-pic.jpg" />
   </div>
   <div class="bio-item">
     <div class="bio-text">

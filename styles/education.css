@@ -1,0 +1,14 @@
+section.school{
+  width: 1030px;
+  margin: auto;
+  padding: 150px 0px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+section.school div.item{
+  width: 500px;
+  background-color: #212121;
+  border-radius: 5px;
+}

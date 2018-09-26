@@ -1,0 +1,37 @@
+/* Tab */
+div.SkillsContainer{
+  width: 1030px;
+}
+
+.tab{
+  overflow: hidden;
+  border-radius: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Buttons */
+.tab button{
+  background-color: inherit;
+  float: left;
+  border-radius: none
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.4s;
+}
+
+.tab button:hover{
+  background-color: #ddd;
+}
+
+.tab button.active{
+  background-color: #ccc;
+}
+
+/* Tab-Content */
+.tabcontent{
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

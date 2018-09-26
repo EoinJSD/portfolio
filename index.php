@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <?php include 'resources/dbconn.php'; ?>
 <html>
-    <head><?php include_once('pages/inc/head.inc.php')?></head>
+    <?php include_once('pages/inc/head.inc.php')?>
 <body>
-    <section class="LandingZone">
     <header><?php include_once('pages/inc/header.inc.php') ?></header>
-    <?php include_once('pages/Bio.php') ?>
-    </section>
 
-    <section class="Skills"><?php include_once('pages/Skills.php') ?></section>
-
-    <section class="ShowOff"><?php include_once('pages/ShowOff.php') ?></section>
-
-    <section class="blogSection" id="index"><div class="blogContainer scrolly" id="index"><?php include_once('pages/BlogSection.php') ?></div></section>
-
-    <section class="WorkExperience"><?php include_once('pages/WorkExperience.php') ?></section>
-
-    <section class="Education"><?php include_once('pages/education.php') ?></section>
+<article class="MainContainer">
+    <section class="indexSection"><?php include_once('pages/SkillsSection.php')?> </section>
+    <section class="indexSection"><?php include_once('pages/WorkExperience.php') ?></section>
+    <section class="indexSection"><?php include_once('pages/ShowOff.php') ?></section>
+    <section class="indexSection"><?php include_once('pages/BlogSection.php') ?></section>
+    <section class="indexSection"><?php include_once('pages/Education.php') ?></section>
+</article>
 
     <footer><?php include_once('pages/inc/footer.inc.php') ?></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/education.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="./scripts/skills.js"></script>
+
 </body>
 </html>

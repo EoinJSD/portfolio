@@ -9,15 +9,14 @@
 
 /* */
 
-.ExpSection{
+.ExpContainer{
   white-space: nowrap;
   width: 1030px;
-  margin: auto;
-  background-color: #212121;
+  background-color: #262626;
 	overflow-x: scroll !important;
 }
 
-.ExpSection ol{
+.ExpContainer ol{
     font-size: 0;
     width: 100vw;
     height: 350px;
@@ -25,7 +24,7 @@
     transition: all 1s;
 }
 
-.ExpSection ol li{
+.ExpContainer ol li{
     top: 50%;
     position: relative;
     display: inline-block;
@@ -35,19 +34,19 @@
     background-color: #fff;
 }
 
-.ExpSection ol li:last-child{
+.ExpContainer ol li:last-child{
 	width: 300px;
 }
 
-.ExpSection ol li:first-child {
+.ExpContainer ol li:first-child {
 	width: 100px;
 }
 
-.ExpSection ol li:not(:first-child) {
+.ExpContainer ol li:not(:first-child) {
 	margin-left: 14px;
 }
 
-.ExpSection ol li:not(:last-child)::after {
+.ExpContainer ol li:not(:last-child)::after {
     content: '';
     position: absolute;
     top: 30%;
@@ -63,7 +62,7 @@
 
 /*-- --*/
 
-.ExpSection ol li div {
+.ExpContainer ol li div {
   position: absolute;
   left: calc(100% + 7px);
   width: 280px;
@@ -74,7 +73,7 @@
   background: white;
 }
 
-.ExpSection ol li div::before {
+.ExpContainer ol li div::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -85,12 +84,12 @@
 }
 
 /*-- --*/
-.ExpSection ol li:nth-child(odd) div {
+.ExpContainer ol li:nth-child(odd) div {
   top: -16px;
   transform: translateY(-100%);
 }
 
-.ExpSection ol li:nth-child(odd) div::before {
+.ExpContainer ol li:nth-child(odd) div::before {
   top: 99%;
   border-width: 8px 8px 0 0;
   border-color: white transparent transparent transparent;
@@ -98,11 +97,11 @@
 
 /*-- --*/
 
-.ExpSection ol li:nth-child(even) div {
+.ExpContainer ol li:nth-child(even) div {
   top: calc(100% + 16px);
 }
 
-.ExpSection ol li:nth-child(even) div::before {
+.ExpContainer ol li:nth-child(even) div::before {
   top: -8px;
   border-width: 8px 0 0 8px;
   border-color: transparent transparent transparent white;

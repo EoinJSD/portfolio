@@ -1,4 +1,4 @@
-<section id="scroll" class="ExpSection">
+<div class="ExpContainer scrollx">
       <ol>
         <li>
 			<div>

@@ -1,0 +1,65 @@
+/*school*/
+
+div.EducationContainer{
+  width: 1030px;
+  /*display: grid*/
+  display: flex;
+  flex-wrap: wrap;
+  /*grid-auto-flow: column;*/
+  justify-content: space-between;
+  align-items:flex-start;
+  /* Notes: Adding this, only the expanded box will expand, the other will stay the same. */
+  /* Notes: Instead of display:grid and grid-auto-flow you should use the new flexbox model, takes time to get used to, but is powerful and cool:
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+}
+
+div.EducationPlaceholder{
+  display: grid;
+  grid-auto-flow: row;
+  width: 500px;
+  background-color: #262626;
+  border-radius: 5px;
+}
+
+.expand{
+  width: auto;
+  margin: auto auto 0px auto;
+  padding: 0px 243px;
+  text-decoration: none;
+  color: #ff9148;
+  transition: all .3s;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+}
+
+.expand:hover{
+  color: #212121;
+  background-color: #ff9148;
+}
+
+div.details{
+  display: grid;
+  grid-auto-flow: column;
+  padding: 15px;
+}
+
+div.details img{
+  border-radius: 5px;
+  width: auto;
+  height: 100px;
+}
+
+div.moreDetails{
+  display: none;
+  border-top: solid 0.5px #ff9148;
+}
+
+div.showDetails{
+  display: block;
+}
+
+div.details ol{
+  display: block;
+  list-style: none;
+  line-height: 1em;
+}

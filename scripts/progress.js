@@ -23,16 +23,6 @@ jQuery(document).ready(function(){
   });
 
   $(".prev").on("click", function(e){
-/*
-    var currentTopic = $(".active");
-    var prevTopic    = currentTopic.prev();
-
-    if(prevTopic.length == 1){ prevTopic = $(".topic-container div").last();}
-
-    currentTopic.removeClass("active").addClass("hidden").css("z-index", -2);
-    prevTopic.addClass("active").removeClass("hidden").css("z-index", 4);
-    $(".topic-container div").not([currentTopic,prevTopic]).css("z-index", 1);
-*/
     e.preventDefault();
   });
 

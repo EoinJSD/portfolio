@@ -5,33 +5,68 @@ div.SkillsContainer{
 
 .tab{
   overflow: hidden;
-  border-radius: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #232323;
 }
 
 /* Buttons */
 .tab button{
-  background-color: inherit;
+  background-color: #232323;
+  color: #545454;
   float: left;
-  border-radius: none
+  border-radius: none;
+  border-top: 1px solid #232323;
+  border-left: 1px solid #232323;
+  border-right: 1px solid #232323;
+  border-bottom: 0;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 15px 25px;
   transition: 0.4s;
 }
 
 .tab button:hover{
-  background-color: #ddd;
+  border-top: 1px solid #fff;
+  background-color: #212121;
 }
 
 .tab button.active{
-  background-color: #ccc;
+  border-top: 1px solid #ff9148;
+  background-color: #212121;
+  color: #fff;
+}
+
+.tab button.active > i{
+  color: #ff9148;
 }
 
 /* Tab-Content */
 .tabcontent{
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  border-top: 1px solid #ff9148;
+  background-color: #212121;
+}
+
+.material-icons{
+  color: #545454;
+}
+
+/* box styles */
+
+div.tabContainer{
+  width: 100%;
+  max-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+    width: 25%;
+    height: 150px;
+    max-height: 150px;
+    background-color: darkgrey;
+}
+
+.box:nth-child(even){
+    background-color: dimgrey;
 }

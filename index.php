@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<?php include 'resources/dbconn.php'; ?>
+<?php
+include 'resources/dbconn.php';
+include 'resources/contactForm.php';
+?>
 <html>
 <head>
     <?php include_once('pages/inc/head.inc.php')?>
@@ -26,5 +29,6 @@
     <script type="text/javascript" src="./scripts/education.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
     <script type="text/javascript" src="./scripts/skills.js"></script>
+    <script type="text/javascript" src="./scripts/contact.js"></script>
 </body>
 </html>

@@ -6,16 +6,10 @@
   <div class="bio-item">
     <div class="bio-text">
       <p>
-        Quo affert adipisci facilisis te, nec movet consectetuer et. Eum vidisse prompta maiorum
-        id. His altera civibus honestatis te, ut quem delenit petentium vel. At nec eius denique,
-        tota ipsum eligendi ne mel, modo dicam percipit sea no. Vix novum nusquam id, te sonet graeci
-        expetenda has, illum virtute vituperata in duo.
+        Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit. In mea alii quot mnesarchum. Ut cum consequat incorrupte, ea tota inermis similique mei. Duo esse meliore adolescens ne, mollis blandit no ius. Ei nec prima velit dolore, et tation oblique necessitatibus vel. Vis vocent utamur id, ut malis debet volumus duo. Splendide torquatos te cum, cu blandit quaestio incorrupte quo.
       </p>
       <p>
-        Quo affert adipisci facilisis te, nec movet consectetuer et. Eum vidisse prompta maiorum
-        id. His altera civibus honestatis te, ut quem delenit petentium vel. At nec eius denique,
-        tota ipsum eligendi ne mel, modo dicam percipit sea no. Vix novum nusquam id, te sonet graeci
-        expetenda has, illum virtute vituperata in duo.
+        Volutpat gubergren complectitur sit ex, est et zril salutandi. Eu vim unum option. Pri altera tincidunt at, ius ad eius nullam intellegebat. Mel saepe minimum detraxit no, ex oporteat repudiare eum, ex eum corpora pertinax. Eam latine dolorem petentium ad. Eu mea impetus facilis, regione intellegam assueverit cu eos.
       </p>
     </div>
   </div>

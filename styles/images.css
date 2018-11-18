@@ -1,13 +1,14 @@
 * {box-sizing: border-box;}
 
 .showoff-slider{
-  width: 1030px;
-  height: 150px;
+  max-width: 1030px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .showoff-slider img{
-  width: 206px;
-  height: 150px;
+  max-width: 257px;
+  max-height: 257px;
+  object-fit: cover;
 }

@@ -6,33 +6,48 @@
 </head>
 <body>
     <header><?php include_once('pages/inc/header.inc.php') ?></header>
-
+<?php
+include_once 'resources/dbconn.php';
+$sql    = "SELECT * FROM gallery;";
+$result = mysqli_query(OpenConnection(), $sql);
+?>
     <div class="landingContainer">
       <div class="carouselContainer">
-          <div class="carousel-item active">
+        <?php
+        $result_check = mysqli_num_rows($result);
+          if($result_check > 0){
+            while ($row = mysqli_fetch_assoc($result)) {
+              $src = $row['src'];
+              $alt = $row['alt'];
 
-          </div>
-          <div class="carousel-item">
-
+              echo '<img class="slides" src="./images/bg-1.jpg" alt="default"/>
+                    <img class="slides" src="'. $src .'" alt="'. $alt .'" />';
+            }
+          }else{
+            echo '<img class="slides" src="./images/bg-1.jpg" alt="default"/>';
+          }
+        ?>
+          <div class="throwingShade">
+            <!--This is me throwing shade...-->
           </div>
       </div>
-      <!-- Links  for projects to be displayed below-->
-      <div class="linksContainer">
-            <ul class="carouselContainer">
-              <li class="carousel-item">
+      <!-- badges  for projects to be displayed below-->
+      <div class="badgesContainer">
+            <ul class="badges">
+              <li class="badge-item">
+                <a class="link" href="#">DEVELOPMENT</a>
+              </li>
+              <li class="badge-item">
                 <a class="link" href="#">BLOG</a>
               </li>
-              <li class="carousel-item">
+              <li class="badge-item">
                 <a class="link" href="#">DESIGN</a>
               </li>
-              <li class="carousel-item">
-                <a class="link" href="#">OTHER</a>
+              <li class="badge-item">
+                <a class="link" href="#">MUSIC</a>
               </li>
-              <li class="carousel-item">
-                <a class="link" href="#">OTHER</a>
-              </li>
-              <li class="carousel-item">
-                <a class="link" href="#">PHOTOGRAPHY</a>
+              <li class="badge-item">
+                <a class="link" href="#">MISC</a>
               </li>
             </ul>
       </div>
@@ -45,7 +60,9 @@
     </article>
 
     <footer><?php include_once('pages/inc/footer.inc.php') ?></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/index.js"></script>
+
+    <script src="./scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./scripts/portfolio.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

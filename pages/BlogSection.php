@@ -1,6 +1,6 @@
     <?php
     $uriCheck = $_SERVER['REQUEST_URI'];
-    $PortfolioUri = '/portfolio_website/portfolio/portfolio.php';
+    $PortfolioUri = '/portfolio/portfolio.php';
 
     $sql = "SELECT * FROM posts";
     $result = mysqli_query(OpenConnection(),$sql);

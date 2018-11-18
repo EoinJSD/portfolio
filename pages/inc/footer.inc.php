@@ -9,7 +9,7 @@
             </form>
         </li>
         <li class="signature">
-            <img id="thumbnail" width="180px" height="180px" src="/portfolio_website/portfolio/images/profile/footer-profile-pic-main.jpg" />
+            <img id="thumbnail" width="180px" height="180px" src="/portfolio/images/profile/footer-profile-pic-main.jpg" />
             <span class="logo">Eóin J S Dolan</span>
         </li>
     </ul>

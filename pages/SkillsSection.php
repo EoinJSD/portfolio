@@ -19,8 +19,6 @@
             }
           }
       ?>
-      <img class="skillsImage" src="./images/tec-logos/html.png"/>
-      <img class="skillsImage" src="./images/tec-logos/html.png"/>
     </div>
   </div>
 

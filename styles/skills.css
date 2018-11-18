@@ -57,14 +57,12 @@ div.tabContainer{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 img.skillsImage{
-    width: 201px;
-    max-height: 150px;
-    background-color: darkgrey;
-}
-
-img.skillsImage:nth-child(even){
-    background-color: dimgrey;
+  margin: 20px;
+  width: 200px;
+  max-height: 150px;
+  object-fit: scale-down;
 }

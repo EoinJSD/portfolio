@@ -29,13 +29,13 @@
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 200px;
+    width: 300px;
     height: 3px;
     background-color: #fff;
 }
 
 .ExpContainer ol li:last-child{
-	width: 300px;
+	width: 400px;
 }
 
 .ExpContainer ol li:first-child {
@@ -65,7 +65,7 @@
 .ExpContainer ol li div {
   position: absolute;
   left: calc(100% + 7px);
-  width: 280px;
+  width: 330px;
   padding: 15px;
   font-size: 1rem;
   white-space: normal;

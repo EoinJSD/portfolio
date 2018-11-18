@@ -2,7 +2,7 @@
 <html>
 <head>
     <?php include_once('pages/inc/head.inc.php')?>
-    <link rel="stylesheet" href="/portfolio_website/portfolio/styles/portfolio.css">
+    <link rel="stylesheet" href="/portfolio/styles/portfolio.css">
 </head>
 <body>
     <header><?php include_once('pages/inc/header.inc.php') ?></header>

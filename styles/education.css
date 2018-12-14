@@ -14,8 +14,8 @@ div.EducationContainer{
 }
 
 div.EducationPlaceholder{
-  display: grid;
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: column;
   width: 500px;
   background-color: #262626;
   border-radius: 5px;
@@ -38,8 +38,8 @@ div.EducationPlaceholder{
 }
 
 div.details{
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-flow: wrap;
   padding: 15px;
 }
 
@@ -63,4 +63,33 @@ div.details ol{
   display: block;
   list-style: none;
   line-height: 1em;
+}
+
+
+@media only screen and (max-width: 600px) {
+  div.EducationPlaceholder {
+    width: 100%;
+  }
+
+  div.EducationContainer {
+    max-width: 500px;
+    justify-content: center;
+  }
+
+  div.EducationContainer > .EducationPlaceholder:not(:first-child){
+    margin-top: 20px;
+  }
+
+  div.details ol {
+    padding: 0;
+    text-align: center;
+  }
+
+  div.details{
+    justify-content: center;
+  }
+
+  .expand{
+    padding: 0 172px;
+  }
 }

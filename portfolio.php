@@ -7,7 +7,7 @@
 <body>
     <header><?php include_once('pages/inc/header.inc.php') ?></header>
 <?php
-include_once 'resources/dbconn.php';
+include_once 'resources/dbconn_hg.php';
 $sql    = "SELECT * FROM gallery;";
 $result = mysqli_query(OpenConnection(), $sql);
 ?>

@@ -24,12 +24,12 @@ if (isset($_POST['email_address'])){
 
   $errMsg = "";
 
-  $mailFormat = "/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/";
+  $mailFormat = "[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}";
   if(!preg_match($mailFormat,$email)){
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
 
-  $string_exp = "/^[A-Za-z .'-]+$/";
+  $string_exp = "[A-Za-z .'-]+$";
   if(!preg_match($string_exp,$name)){
     $error_message .= 'The name you entered does not appear to be valid.<br />';
   }
@@ -43,7 +43,7 @@ if (isset($_POST['email_address'])){
     died($error_message);
   }
 
-  $email_message = "Form details below.\n\n";
+  $email_message = "Form details below./n/n";
 
   function cleanString($string){
     $bad = arrayrray("content-type","bcc:","to:","cc:","href");
@@ -60,7 +60,6 @@ if (isset($_POST['email_address'])){
 ?>
  
 <!-- include your own success html here -->
- 
 Thank you for contacting us. We will be in touch with you very soon.
  
 <?php

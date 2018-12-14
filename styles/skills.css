@@ -56,7 +56,7 @@ div.SkillsContainer{
 div.tabContainer{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: center;
 }
 
@@ -65,4 +65,35 @@ img.skillsImage{
   width: 200px;
   max-height: 150px;
   object-fit: scale-down;
+}
+
+@media only screen and (max-width: 600px) {
+  div.SkillsContainer {
+    max-width: 500px;
+  }
+
+  div.tabContainer{
+    flex-flow: row;
+    overflow: hidden;
+  }
+  .tabcontent{
+    padding: 0;
+  }
+
+  .tab{
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab button{
+    padding: 7px 15px;
+    font-size: 8pt;
+  }
+
+  img.skillsImage {
+    margin: 10px;
+    width: 70px;
+    max-height: 70px;
+  }
+
 }

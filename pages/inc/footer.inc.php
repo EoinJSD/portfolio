@@ -1,15 +1,16 @@
-    <ul class="footer-container">
-        <li class="contactContainer">
-            <button class="contact">Contact</button>
-            <form class="contactFrom" action="contactForm.php" method="post">
-              <input type="text" name="full_name" value="Full Name *" maxlength="50" size="30">
-              <input type="text" name="email_address" value="Email Address *" size="30">
-              <input type="text" name="message" value="Message *" maxlength="300" cols="25" rows="8">
-              <input type="submit" name="submit" value="Send">
-            </form>
-        </li>
-        <li class="signature">
-            <img id="thumbnail" width="180px" height="180px" src="/portfolio/images/profile/footer-profile-pic-main.jpg" />
-            <span class="logo">Eóin J S Dolan</span>
-        </li>
-    </ul>
+<div class="footerMain">
+    <div class="formContainer">
+        <button class="btnContact">Contact</button>
+        <form class="contactForm" action="contact.php" method="post">
+          <input type="text" id="name" name="name" placeholder="Full Name *" maxlength="50" required />
+          <input type="email" id="email" name="email" placeholder="Email Address *" maxlength="50" required />
+          <textarea type="text" id="message" name="message" placeholder="Message *" maxlength="500"> </textarea>
+          <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="spacer"></div>
+    <div class="signature">
+        <img id="thumbnail" width="180px" height="180px" src="/portfolio/images/profile/profile2.2.png" />
+        <span class="logo">Eóin J S Dolan</span>
+    </div>
+</div>

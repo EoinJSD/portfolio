@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include 'resources/dbconn.php';
+include 'resources/dbconn_hg.php';
 include 'resources/contactForm.php';
 ?>
 <html>

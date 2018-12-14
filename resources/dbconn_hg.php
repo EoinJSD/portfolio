@@ -1,10 +1,10 @@
 <?php
 function OpenConnection()
 {
-    $host = "localhost:3306"; //dbhost
-    $user = "eoinjsd_owner"; //dbuser
-    $pass = "Iamixbuck92"; //dbpassword
-    $name = "eoinjsd_portfolio"; //dbname
+    $host = "localhost"; //dbhost
+    $user = "root"; //dbuser
+    $pass = ""; //dbpassword
+    $name = "portfolio"; //dbname
 
     $conn = mysqli_connect($host,$user,$pass,$name);
 

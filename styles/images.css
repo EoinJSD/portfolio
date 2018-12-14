@@ -12,3 +12,12 @@
   max-height: 257px;
   object-fit: cover;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  .showoff-slider img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+}

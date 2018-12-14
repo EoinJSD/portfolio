@@ -39,6 +39,7 @@ div.throwingShade{
 div.badgesContainer{
   width: 100%;
   padding: 0 100px;
+  overflow: hidden;
 }
 
 ul.badges{
@@ -134,4 +135,39 @@ a.more{
   color: #ff9148;
   transition: all .3s;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+  div.badgesContainer {
+    padding: 0px;
+  }
+
+  div.carouselContainer{
+    height: 250px;
+  }
+
+  div.carouselContainer img {
+    height: 250px;
+  }
+
+  ul.badges li.badge-item {
+    padding: 5px 10px;
+    font-size: 8pt;
+  }
+
+  div.throwingShade{
+    max-width: 360px;
+    height: 250px;
+  }
+
+  .cardContainer {
+    max-width: 360px;
+    margin: 20px;
+  }
+
+  .image-responsive{
+    height: 160px;
+  }
+
 }

@@ -1,60 +1,120 @@
 * {box-sizing: border-box;}
 
 div.landingContainer{
-  width: 100vw;
-  height: 50vh;
+  max-width: 1903px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #212121;
 }
-
+/* Carousel */
 div.carouselContainer{
-  width: 100%;
-  height: 90%;
+  max-width: 1903px;
+  max-height: 436px;
   background-color: #434343;
 }
 
-div.linksContainer{
+div.carouselContainer img{
+  object-fit: cover;
+  height: 436px;
   width: 100%;
-  padding: 0 100px;
+
 }
 
-ul.carouselContainer{
+div.throwingShade{
+  width: 1903px;
+  background-color: rgb(0,0,0,0.6);
+  height: 436px;
+  position: absolute;
+  top: 0;
+}
+.hide{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+/* Badges */
+
+div.badgesContainer{
+  width: 100%;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+ul.badges{
   width: auto;
   margin: 0;
-  background-color: #535353;
   display: inline-flex;
   list-style-type: none;
   padding: 0;
 }
 
-ul.carouselContainer li.carousel-item{
-  padding: 0 20px;
+ul.badges li.badge-item{
+  padding: 20px;
+  margin: 10px;
   height: 100%;
+  background-color: #212121;
+  border-radius: 10px;
 }
 
-ul.carouselContainer li.carousel-item a.link{
+ul.badges li.badge-item a.link:hover{
+  color: #ff9148;
+}
+
+ul.badges li.badge-item a.link{
   padding: 0;
   text-decoration: none;
   color: #fff;
 }
 
 section.row {
-    width: 1200px;
-    max-width: 1903px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
 }
 
 .cardContainer{
-  background-color: #212121;
-  max-width: 460px;
-  margin: 0 30px;
-
+  position: relative;
+  background-color: #262626;
+  max-width: 480px;
+  margin: 10px;
 }
 
-.card{
-  padding: 10px;
+/* relevant styles */
+.card-body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.cardContainer:hover .card-body {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-text {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.cardContainer:hover .card-text {
+  transform: translateX(0);
 }
 
 .image-responsive{
@@ -63,4 +123,51 @@ section.row {
   height: 300px;
   width: 100%;
   object-fit: cover;
+}
+
+a.more{
+  max-width: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: #ff9148;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+  div.badgesContainer {
+    padding: 0px;
+  }
+
+  div.carouselContainer{
+    height: 250px;
+  }
+
+  div.carouselContainer img {
+    height: 250px;
+  }
+
+  ul.badges li.badge-item {
+    padding: 5px 10px;
+    font-size: 8pt;
+  }
+
+  div.throwingShade{
+    max-width: 360px;
+    height: 250px;
+  }
+
+  .cardContainer {
+    max-width: 360px;
+    margin: 20px;
+  }
+
+  .image-responsive{
+    height: 160px;
+  }
+
 }

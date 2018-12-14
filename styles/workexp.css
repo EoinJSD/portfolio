@@ -29,13 +29,13 @@
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 200px;
+    width: 300px;
     height: 3px;
     background-color: #fff;
 }
 
 .ExpContainer ol li:last-child{
-	width: 300px;
+	width: 600px;
 }
 
 .ExpContainer ol li:first-child {
@@ -65,12 +65,17 @@
 .ExpContainer ol li div {
   position: absolute;
   left: calc(100% + 7px);
-  width: 280px;
+  width: 330px;
   padding: 15px;
   font-size: 1rem;
   white-space: normal;
   color: black;
   background: white;
+}
+
+.ExpContainer ol li div:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
 }
 
 .ExpContainer ol li div::before {
@@ -105,4 +110,39 @@
   top: -8px;
   border-width: 8px 0 0 8px;
   border-color: transparent transparent transparent white;
+}
+
+@media only screen and (max-width: 600px) {
+
+.ExpContainer{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.ExpContainer ol {
+  height: 200px;
+}
+
+.ExpContainer ol li:first-child {
+  width: 25px;
+}
+
+.ExpContainer ol li:not(:first-child) {
+    margin-left: 14px;
+}
+.ExpContainer ol li:last-child {
+    width: 300px;
+}
+
+.ExpContainer ol li {
+  width: 210px;
+}
+.ExpContainer ol li div{
+  width: 259px;
+  padding: 7px;
+  font-size: 8pt;
+}
+
+
 }

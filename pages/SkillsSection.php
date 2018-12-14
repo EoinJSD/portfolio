@@ -1,68 +1,57 @@
 <div class="SkillsContainer">
   <div class="tab">
-    <button class="tablinks active" onclick="openCity(event, 'WEB')"> <i class= "material-icons">web</i><br />Web Development</button>
-    <button class="tablinks" onclick="openCity(event, 'GRAPH')"> <i class= "material-icons">perm_media</i><br />Graphic Design</button>
-    <button class="tablinks" onclick="openCity(event, 'DEV')"> <i class= "material-icons">code</i><br />Development Tools</button>
+    <button class="tablinks active" onclick="openCity(event, 'WEB')"> <i class="material-icons">web</i><br />Web Development</button>
+    <button class="tablinks" onclick="openCity(event, 'GRAPH')"> <i class="material-icons">perm_media</i><br />Graphic Design</button>
+    <button class="tablinks" onclick="openCity(event, 'DEV')"> <i class="material-icons">code</i><br />Development Tools</button>
   </div>
-
   <!-- Tab Content -->
   <div id="WEB" class="tabcontent" style="display: block;">
     <div class="tabContainer">
-      <div class="box">
-        <p>HTML</p>
-      </div>
+      <?php
+        $topicWeb = "WEB";
+        $topicquery = "SELECT * FROM skills WHERE topic = '".$topicWeb."'";
+        $topicresult = mysqli_query(OpenConnection(),$topicquery);
 
-      <div class="box">
-        <p>CSS</p>
-      </div>
-
-      <div class="box">
-        <p>JQuery</p>
-      </div>
-
-      <div class="box">
-        <p>PHP</p>
-      </div>
+        $topicresult_check = mysqli_num_rows($topicresult);
+          if($topicresult_check >= 1){
+            while ($topicrow = mysqli_fetch_assoc($topicresult)) {
+              echo '<img class="skillsImage" src="'. $topicrow['image_source'] .'"/>';
+            }
+          }
+      ?>
     </div>
   </div>
 
   <div id="GRAPH" class="tabcontent">
     <div class="tabContainer">
-      <div class="box">
-        <p>Photoshop</p>
-      </div>
+      <?php
+        $topicGraph = "GRAPH";
+        $topicquery = "SELECT * FROM skills WHERE topic = '".$topicGraph."'";
+        $topicresult = mysqli_query(OpenConnection(),$topicquery);
 
-      <div class="box">
-        <p>Illustrator</p>
-      </div>
-
-      <div class="box">
-        <p>InVision</p>
-      </div>
-
-      <div class="box">
-        <p>Sketch</p>
-      </div>
+        $topicresult_check = mysqli_num_rows($topicresult);
+          if($topicresult_check >= 1){
+            while ($topicrow = mysqli_fetch_assoc($topicresult)) {
+              echo '<img class="skillsImage" src="'. $topicrow['image_source'] .'"/>';
+            }
+          }
+      ?>
     </div>
   </div>
 
   <div id="DEV" class="tabcontent">
     <div class="tabContainer">
-      <div class="box">
-        <p>WordPress</p>
-      </div>
+      <?php
+        $topicDev = "DEV";
+        $topicquery = "SELECT * FROM skills WHERE topic = '".$topicDev."'";
+        $topicresult = mysqli_query(OpenConnection(),$topicquery);
 
-      <div class="box">
-        <p>Atom</p>
-      </div>
-
-      <div class="box">
-        <p>Agile</p>
-      </div>
-
-      <div class="box">
-        <p>Support</p>
-      </div>
-    </div>
+        $topicresult_check = mysqli_num_rows($topicresult);
+          if($topicresult_check >= 1){
+            while ($topicrow = mysqli_fetch_assoc($topicresult)) {
+              echo '<img class="skillsImage" src="'. $topicrow['image_source'] .'"/>';
+            }
+          }
+      ?>
   </div>
 </div>

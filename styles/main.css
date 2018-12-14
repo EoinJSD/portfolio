@@ -3,8 +3,13 @@
 /*Global Styles*/
 /*Fonts*/
 @font-face {
-  font-family: 'MarvaleScript'; /*font name*/
-  src: url('fonts/mervale-script.regular.ttf'); /*URL to font*/
+  font-family: 'JavaCom'; /*font name*/
+  src: url('fonts/javacom.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular.ttf')
 }
 
 /**/
@@ -13,11 +18,12 @@ h3{
 }
 
 body{
-	font-family: Courier;
+	font-family: OpenSans;
 	font-size: 12pt;
   color: #fff;
   margin: 0;
   text-align: justify;
+  background-color: #0D0D0D;
 }
 
 .indexSection{
@@ -60,7 +66,7 @@ nav{
 }
 
 a.logo{
-	font-family: Courier;
+	font-family: OpenSans;
 	font-size: 32pt;
 	padding: 0px;
 	margin: -8px 0px -25px 0px;
@@ -80,14 +86,12 @@ h2.logo{
 }
 
 .logo-container{
-	display: grid;
-  justify-items: right;
+  max-width: 180px;
 }
 
-.logo-container span {
-    font-size: 11pt;
-    font-family: courier;
-    padding: 15px 0;
+.logo-container span{
+    font-size: 12pt;
+    font-family: OpenSans;
 }
 
 .links-container{
@@ -95,26 +99,32 @@ h2.logo{
 }
 
 ul.links {
-	display: flex;
-	list-style-type: none;
-	overflow: hidden;
-	padding: 0px;
-	justify-content: flex-end;
-  flex-wrap: wrap-reverse;
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   margin: 0;
+  height: 100%;
 }
 
 ul.links li{
-	margin: 0px 0px;
-  width: 100px;
+  margin: 0px 0px;
+  width: 130px;
+  height: 100%;
+  display: flex;
 }
 
 ul.links li a{
   display: flex;
   color: white;
-  padding: 17px;
+  width: 100%;
   text-decoration: none;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 15pt;
 }
 
 nav ul li a:hover{
@@ -137,7 +147,7 @@ nav ul li a:hover{
   max-width: 100vw;
   max-height: 100vh;
   border-bottom: 1px solid #ff9148;
-  padding: 250px 0px;
+  padding: 300px 0px;
   display: flex;
   justify-content: center;
   z-index: 0;
@@ -146,42 +156,46 @@ nav ul li a:hover{
 .bio-container{
   max-width: 1030px;
   display: flex;
+  flex-flow: wrap;
 }
 
 .bio-container .bio-item{
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 49%;
-  position: relative;
+  align-items: center;
+  width: 500px;
+  display: flex;
 }
 
 .bio-container .bio-item img{
   height: 350px;
 }
-.bio-container .item-across{
-  width: 100%;
+
+.bio-item img,
+.signature img{
+  border-radius: 200px;
 }
 
-.bio-container .bio-text{
-  display: grid;
-  height: 100%;
+.bio-container .item-across{
+  width: 100%;
 }
 
 .bio-container .bio-text p{
   margin: 0;
   font-size: 13pt;
 }
+
+
+
 /* Article Styles */
 article.MainContainer{
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 150px 0;
   width: 100%;
   max-width: 1903px;
   height: auto;
-  background-image: url(../images/bodybackground.jpg);
-  background-color: #212121;
-  background-size: cover;
+  /*background-image: url(../images/bodybackground.jpg);
+  background-size: cover;*/
 }
 
 
@@ -233,13 +247,13 @@ a.readmore{
 div.scrolly::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #212121;
+	background-color: #282828;
 }
 
 div.scrolly::-webkit-scrollbar
 {
 	width: 8px;
-	background-color: #212121;
+	background-color: #282828;
 }
 
 div.scrolly::-webkit-scrollbar-thumb
@@ -251,13 +265,13 @@ div.scrolly::-webkit-scrollbar-thumb
 .scrollx::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #212121;
+	background-color: #282828;
 }
 
 .scrollx::-webkit-scrollbar
 {
 	height: 8px;
-	background-color: #212121;
+	background-color: #282828;
 }
 
 .scrollx::-webkit-scrollbar-thumb
@@ -268,47 +282,76 @@ div.scrolly::-webkit-scrollbar-thumb
 
 /*Footer Styles*/
 footer{
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #ff9148;
-    background: #212121;
-    bottom: 0px;
-    padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ff9148;
+  background: #0F161F;
+  bottom: 0px;
+  padding: 10px 0 10px 0;
 }
 
-.footer-container{
-	width: 900px;
-	max-width: 900px;
+div.footerMain{
+	max-width: 1030px;
+  width: 1030px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
-ul.footer-ul{
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    list-style-type: none;
-	overflow: hidden;
-	padding: 0px;
+div.formContainer{
+  display: flex;
+  flex-flow: column;
+  width: 20%;
 }
 
-ul.footer-ul li{
-    margin: 0;
-    color: white;
+button.contact{
+  width: 100px;
+  height: 30px;
 }
 
-ul.inner-list{
-    list-style-type: none;
-    display: list-item;
-    padding: 0px;
+form.contactForm{
+  display: none;
+  position: relative;
+  left: -1000px;
+  display: none;
+}
+
+form.contactForm input,
+form.contactForm textarea{
+  width: 100%;
+  max-width: 400px;
+}
+
+.formContainer button{
+background-color: #ff9148;
+border: none;
+padding: 15px;
+margin-bottom: 10px;
+width: 100%;
+}
+
+.showContact{
+  left: 0px;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+div.spacer{
+  flex: 1;
+}
+
+div.signature{
+  display: flex;
+  flex-flow: column;
 }
 
 span.logo{
-  font-family: MarvaleScript;
-  font-size: 30pt;
+  font-family: JavaCom;
+  font-size: 12pt;
   color: #fff;
 }
 
 /*other*/
-
 .hide{
 	display: none;
 }
@@ -326,3 +369,92 @@ span.logo{
   }
 
 }
+
+@media only screen and (max-width: 600px) {
+        body{
+          max-width: 600px;
+        }
+
+        .bio-container{
+          justify-content: center;
+        }
+
+        .bio-text h1{
+          max-width: 138px;
+          margin: auto;
+          padding: 0;
+        }
+
+        article.MainContainer{
+          padding: 40px 0;
+        }
+
+        article > .indexSection:not(:first-child):not(:last-child) {
+          margin: 100px 0;
+        }
+
+        .BlogContainer{
+          max-height: 350px;
+          max-width: 500px;
+        }
+
+        .logo-container {
+          max-width: 100px;
+        }
+
+        a.logo{
+          font-size: 20pt;
+        }
+
+        .logo-container span {
+          font-size: 7pt;
+        }
+
+        .links-container{
+          max-width: 100px;
+        }
+
+        ul.links li {
+          margin: 0px 0px;
+          width: 100px;
+          height: 50%;
+        }
+
+        ul.links li a {
+          font-size: 8pt;
+          padding: 8px;
+        }
+
+        .nav-container{
+          max-width: 600px;
+        }
+
+        .bio{
+          padding: 170px 0px;
+        }
+
+        .bio-container .bio-item {
+          width: 280px;
+        }
+
+        .bio-container .bio-item img{
+          height: 190px;
+        }
+
+        .bio-container .bio-text p{
+          font-size: 8pt;
+          text-align: center;
+          padding: 10px 0;
+        }
+
+        /* Footer */
+
+        div.footerMain{
+          width: 50vw;
+          flex-direction: column;
+        }
+
+        div.formContainer {
+          width: 100%;
+        }
+    }

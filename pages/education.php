@@ -11,6 +11,13 @@
     </div>
     <div class="moreDetails">
       <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit. In mea alii quot mnesarchum. Ut cum consequat incorrupte, ea tota inermis similique mei. Duo esse meliore adolescens ne, mollis blandit no ius. Ei nec prima velit dolore, et tation oblique necessitatibus vel. Vis vocent utamur id, ut malis debet volumus duo. Splendide torquatos te cum, cu blandit quaestio incorrupte quo.</p>
+      <ul>
+        <li>Topics</li>
+        <li>- T1</li>
+        <li>- T2</li>
+        <li>- T3</li>
+        <li>- T4</li>
+      </ul>
     </div>
     <a id="more" class="expand">&#x2637;</a>
   </div>
@@ -28,6 +35,13 @@
 
     <div class="moreDetails">
       <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit. In mea alii quot mnesarchum. Ut cum consequat incorrupte, ea tota inermis similique mei. Duo esse meliore adolescens ne, mollis blandit no ius. Ei nec prima velit dolore, et tation oblique necessitatibus vel. Vis vocent utamur id, ut malis debet volumus duo. Splendide torquatos te cum, cu blandit quaestio incorrupte quo.</p>
+      <ul>
+        <li>Topics</li>
+        <li>- T1</li>
+        <li>- T2</li>
+        <li>- T3</li>
+        <li>- T4</li>
+      </ul>
     </div>
     <a id="more" class="expand">&#x2637;</a>
   </div>

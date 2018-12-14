@@ -1,51 +1,76 @@
-section.BlogSection{
-    width: 100vw;
+h2{
+  margin: 0px;
+}
+
+article.mainContainer{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 150px 0;
+  width: 100%;
+  max-width: 1903px;
+  height: auto;
+  background-image: url(../images/bodybackground.jpg);
+  background-color: #212121;
+  background-size: cover;
+}
+
+section.formContainer{
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #212121;
+    padding: 10px;
+    display: flex;
     justify-content: center;
-    display: grid;
-    margin: 0px 0px 20px 0px;
+
+}
+
+article.mainContainer > .formContainer:not(:first-child){
+  margin-top: 150px;
 }
 
 textarea{
-    height: 500px;
-    max-height: 500px;
-    width: 500px;
-    max-width: 500px;
-    border-radius: 10px;
-    padding: 10px;
-    border: solid 1px black;
-    font-size: 12pt;
-    font-family: verdana;
+  padding: 10px;
+  border: solid 1px #ff9148;
+  font-size: 12pt;
+}
+
+textarea.short{
+  max-width: 500px;
+  max-height: 100px;
+  width: 500px;
+  height: 50px;
+}
+
+textarea.desc{
+  max-height: 500px;
+  max-width: 500px;
+  width: 500px;
+  height: 200px;
 }
 
 input, select {
     height: 50px;
-    border-radius: 10px;
     padding: 10px;
-    border: solid 1px black;
+    border: solid 1px #ff9148;
     font-size: 12pt;
-    font-family: verdana;
 }
 
-form.adminblogform{
-    width: 800px;
+form.adminForm{
+    width: 100%;
     display: flex;
-    /* justify-content: csenter; */
-    justify-content: space-between;
 }
 
 section.leftside{
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 5px;
     display: flex;
-    max-width: 250px;
-    width: 250px;
-    max-height: 500px;
-    height: 500px;
+    flex-direction: column;
 }
 
 section.rightside{
-    display: grid;
-    width: 500px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 form.adminblogform h2{

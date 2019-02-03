@@ -1,70 +1,24 @@
 <div class="ExpContainer scrollx">
       <ol>
-        <li>
-			<div>
-          <time>2010</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-			</div>
-        </li>
-        <!-- -->
-        <li>
-			<div>
-          <time>2011</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-			</div>
-        </li>
-		<!-- -->
-		<li>
-			<div>
-          <time>2012</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-			</div>
-        </li>
-        <!-- -->
-        <li>
-			<div>
-          <time>2013</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-			</div>
-        </li>
-		<!-- -->
-		<li>
-			<div>
-          <time>2014</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-			</div>
-        </li>
-        <!-- -->
-        <li>
-			<div>
-          <time>2015</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-			</div>
-        </li>
-		<!-- -->
-        <li>
-      <div>
-          <time>2016</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-      </div>
-        </li>
-    <!-- -->
-    <li>
-      <div>
-          <time>2017</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-      </div>
-    </li>
-        <!-- -->
-    <!-- -->
-    <li>
-      <div>
-          <time>2018</time>
-          <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit.</p>
-      </div>
-    </li>
-    <!-- -->
-	      <li>
-        </li>
+          <?php
+          include_once './resources/dbconn_hg.php';
+
+          $sql    = "SELECT * FROM timeline ORDER BY start_date ASC;";
+          $result = mysqli_query(OpenConnection(), $sql);
+
+            $result_check = mysqli_num_rows($result);
+            if ($result_check > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo '<li>
+                        <div>
+                          <h3>'. $row['start_date'] .'</h2>
+                            <span>'. $row['title'] .'</span>
+                            <span>'. $row['short_description'] .'</span>
+                        </div>
+                      </li>';
+              }
+            }
+          ?>
+          <li></li>
       </ol>
-</section>
+</div>

@@ -2,10 +2,13 @@
 <html>
 <head>
     <?php include_once('pages/inc/head.inc.php')?>
-    <link rel="stylesheet" href="/portfolio/styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
 </head>
 <body>
-    <header><?php include_once('pages/inc/header.inc.php') ?></header>
+    <header>
+      <?php include_once('pages/inc/header.inc.php') ?>
+      <?php include_once('pages/inc/mobileHeader.inc.php') ?>
+    </header>
 <?php
 include_once 'resources/dbconn_hg.php';
 $sql    = "SELECT * FROM gallery;";
@@ -33,7 +36,7 @@ $result = mysqli_query(OpenConnection(), $sql);
       </div>
       <!-- badges  for projects to be displayed below-->
       <div class="badgesContainer">
-            <ul class="badges">
+            <ul class="badges scrollx">
               <li class="badge-item">
                 <a class="link" href="#">DEVELOPMENT</a>
               </li>
@@ -60,9 +63,8 @@ $result = mysqli_query(OpenConnection(), $sql);
     </article>
 
     <footer><?php include_once('pages/inc/footer.inc.php') ?></footer>
-
-    <script src="./scripts/jquery/jquery-3.3.1.min.js"></script>
-    <script src="./scripts/portfolio.js"></script>
-    <script src="./scripts/index.js"></script>
 </body>
+<script src="./scripts/jquery/jquery-3.3.1.min.js"></script>
+<script src="./scripts/portfolio.js"></script>
+<script src="./scripts/index.js"></script>
 </html>

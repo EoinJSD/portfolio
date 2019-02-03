@@ -1,6 +1,6 @@
 <?php
 $uriCheck = $_SERVER['REQUEST_URI'];
-$PortfolioUri = '/portfolio/portfolio.php';
+$PortfolioUri = './portfolio.php';
 
 $sql = "SELECT * FROM posts where NOT genre = 'bio';";
 $result = mysqli_query(OpenConnection(),$sql);

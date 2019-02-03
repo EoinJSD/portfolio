@@ -13,11 +13,13 @@ $(document).ready(function() {
       x[myIndex-1].style.display = "block";
       setTimeout(carousel, 5000); // Change image every 2 seconds
   }
+});
 
   $(".cardContainer").click(function() {
     if ( $(this).width() != 480)
-         $(this).animate({ 'max-width': 480 }, 1000 );
+         $(this).animate({ 'width': 480 }, 1000 );
    else
-         $(this).animate({ 'max-width': 1030 }, 1000 );
- });
-});
+         $(this).animate({ 'width': 980 }, 1000 );
+
+ }
+);

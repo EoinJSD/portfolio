@@ -3,7 +3,7 @@
 <html>
 <head>
 <?php include_once('pages/inc/head.inc.php')?>
-<link rel="stylesheet" href="/portfolio/styles/adminblogformstyle.css" />
+<link rel="stylesheet" href="./styles/adminblogformstyle.css" />
 </head>
 <body>
     <header><?php include_once('pages/inc/header.inc.php') ?></header>

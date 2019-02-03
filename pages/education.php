@@ -1,48 +1,47 @@
-<div class="EducationContainer">
-  <div class="EducationPlaceholder">
-    <div class="details">
-      <img src="./images/education/NCI.jpg" alt="National College of Ireland">
-      <ol>
-        <li>National College of Ireland</li>
-        <li>Mayors Sq, IFSC, Dublin</li>
-        <li>BSc in Gaming & Multimedia</li>
-        <li>2012 &ndash; 2014</li>
-      </ol>
-    </div>
-    <div class="moreDetails">
-      <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit. In mea alii quot mnesarchum. Ut cum consequat incorrupte, ea tota inermis similique mei. Duo esse meliore adolescens ne, mollis blandit no ius. Ei nec prima velit dolore, et tation oblique necessitatibus vel. Vis vocent utamur id, ut malis debet volumus duo. Splendide torquatos te cum, cu blandit quaestio incorrupte quo.</p>
-      <ul>
-        <li>Topics</li>
-        <li>- T1</li>
-        <li>- T2</li>
-        <li>- T3</li>
-        <li>- T4</li>
-      </ul>
-    </div>
-    <a id="more" class="expand">&#x2637;</a>
-  </div>
+<?php
+$sqlEdu = "SELECT * FROM education;";
+$resEdu = mysqli_query(OpenConnection(),$sqlEdu);
 
-  <div class="EducationPlaceholder">
-    <div class="details">
-      <img src="./images/education/WCFE.png" alt="Whitehall College of Further Education">
-      <ol>
-        <li>Whitehall College FE</li>
-        <li>Mobhi Rd, Glasnevin, Dublin</li>
-        <li>FETAC PC Specialist</li>
-        <li>2009 &ndash; 2010</li>
-      </ol>
-    </div>
+echo "<div class='EducationContainer'>";
 
-    <div class="moreDetails">
-      <p>Lorem ipsum dolor sit amet, id choro argumentum qui, id est falli percipit. In mea alii quot mnesarchum. Ut cum consequat incorrupte, ea tota inermis similique mei. Duo esse meliore adolescens ne, mollis blandit no ius. Ei nec prima velit dolore, et tation oblique necessitatibus vel. Vis vocent utamur id, ut malis debet volumus duo. Splendide torquatos te cum, cu blandit quaestio incorrupte quo.</p>
-      <ul>
-        <li>Topics</li>
-        <li>- T1</li>
-        <li>- T2</li>
-        <li>- T3</li>
-        <li>- T4</li>
-      </ul>
-    </div>
-    <a id="more" class="expand">&#x2637;</a>
-  </div>
-</div>
+  if(mysqli_num_rows($resEdu) > 0){
+    while($row = mysqli_fetch_assoc($resEdu)){
+
+      $eduPlaceholder = "<div class='EducationPlaceholder'>
+                            <div class='details'>
+                              <img src='". $row["main_image_source"] ."' alt='". $row["institution"] ."'>
+                                <ol>
+                                  <li>". $row["institution"] ."</li>
+                                  <li>". $row["short_description"] ."</li>
+                                  <ll>". $row["certification"] ."</li>
+                                  <li>". $row["start_date"] ." &ndash; ". $row["end_date"] ."</li>
+                                </ol>
+                            </div>";
+      echo $eduPlaceholder;
+      $eduMoreDetailsProjects = "<div class='moreDetails'>
+                                <p>
+                                <h3>Projects</h3>
+                                  ". $row["projects"] ."";
+      echo $eduMoreDetailsProjects;
+      $eduCourseWork = "<h3>Coursework</h3>
+                                    <ul>
+                                      <li>".$row['subjects']."
+                                    </ul>";
+
+      $outputEduTopics = str_replace(',', '</li><li>', $eduCourseWork);
+      echo $outputEduTopics;
+
+        $eduSocieties = "<h3>Societies</h3>". $row["societies"] ."
+                      </p>
+                      </div>
+                      <i id='more' class='material-icons edu'>expand_more</i>
+                    </div>";
+      echo $eduSocieties;
+    }
+  }else{
+    echo "0 Results";
+  }
+  CloseConnection(OpenConnection());
+
+echo "</div>";
+?>

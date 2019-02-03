@@ -45,6 +45,43 @@ header{
 	justify-content: center;
   border-bottom: 1px solid #ff9148;
 }*/
+/* Mobile Nav Styles */
+div.mobile-logo-container{
+  display: none;
+}
+
+ul.mobileLinks{
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100vw;
+}
+
+ul.mobileLinks li{
+  width: 50%;
+  background-color: #ff9148;
+  border-color: #282828;
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+}
+
+ul.mobileLinks li a{
+  display: flex;
+  color: #282828;
+  width: 100%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 15pt;
+}
+
+ul.mobileLinks li a:hover{
+  color: #000;
+}
+
+/* Mobile Nav Styles End */
 
 nav{
   position: fixed;
@@ -56,6 +93,7 @@ nav{
 }
 
 .nav-container{
+  padding: 10px 0px;
 	display: flex;
   width: 1030px;
 	justify-content: space-between;
@@ -65,15 +103,22 @@ nav{
   width:100%;
 }
 
+/*
 a.logo{
 	font-family: OpenSans;
-	font-size: 32pt;
+	font-size: 35pt;
 	padding: 0px;
 	margin: -8px 0px -25px 0px;
 	color: #fff;
 	text-shadow: #000 -2px 1px 4px;
   text-decoration: none;
   z-index: 1;
+  border-bottom: 1px solid #ff9148;
+}*/
+
+a.logo img{
+  height: auto;
+  width: 100%;
 }
 
 h2.logo{
@@ -86,13 +131,15 @@ h2.logo{
 }
 
 .logo-container{
-  max-width: 180px;
+  max-width: 250px;
 }
 
+/*
 .logo-container span{
-    font-size: 12pt;
+    font-size: 13pt;
     font-family: OpenSans;
-}
+}*/
+
 
 .links-container{
 	max-width: 320px;
@@ -128,19 +175,23 @@ ul.links li a{
 }
 
 nav ul li a:hover{
-	color: #3b240e; /*Brown*/
-	background-color: #ff9148; /*Orange*/
-	transition: .3s;
+	color: #ff9148; /*Orange
+	background-color: #ff9148; */
+	transition: .2s;
 }
 
+nav ul li a:active{
+  text-shadow: 0px 0px 1px #ff9148;
+  color: rgba(0, 0, 0, 0.0);
+}
 
 /*Main Container Styles*/
 /* section.header{ */
 
 .bio {
   background:  linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
     ),url(../images/bg-1.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
@@ -166,6 +217,13 @@ nav ul li a:hover{
   display: flex;
 }
 
+.bio-text h1{
+  color: #ff9148;
+  font-size: 35pt;
+  padding: 5px 0px;
+  margin: 0;
+}
+
 .bio-container .bio-item img{
   height: 350px;
 }
@@ -173,6 +231,7 @@ nav ul li a:hover{
 .bio-item img,
 .signature img{
   border-radius: 200px;
+  margin: auto;
 }
 
 .bio-container .item-across{
@@ -183,8 +242,6 @@ nav ul li a:hover{
   margin: 0;
   font-size: 13pt;
 }
-
-
 
 /* Article Styles */
 article.MainContainer{
@@ -197,7 +254,6 @@ article.MainContainer{
   /*background-image: url(../images/bodybackground.jpg);
   background-size: cover;*/
 }
-
 
 /* Wide Section | Image Display Box */
 .box{
@@ -262,7 +318,7 @@ div.scrolly::-webkit-scrollbar-thumb
   border-radius: 5px;
 }
 
-.scrollx::-webkit-scrollbar-track
+.scrollx::-webkit-scrollbarspotify-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #282828;
@@ -278,6 +334,12 @@ div.scrolly::-webkit-scrollbar-thumb
 {
 	background-color: #ff9148;
   border-radius: 5px;
+}
+
+/* Moz scrollbar*/
+.scrollx, .scrolly{
+  scrollbar-width: thin;
+  scrollbar-color: #ff9148 #212121;
 }
 
 /*Footer Styles*/
@@ -305,7 +367,8 @@ div.formContainer{
   width: 20%;
 }
 
-button.contact{
+h2.contact{
+  color: #ff9148;
   width: 100px;
   height: 30px;
 }
@@ -346,6 +409,8 @@ div.signature{
 }
 
 span.logo{
+  display: flex;
+  justify-content: center;
   font-family: JavaCom;
   font-size: 12pt;
   color: #fff;
@@ -358,7 +423,6 @@ span.logo{
 
 /* mbile Styles */
 @media screen and (max-width: 800px){
-
   .BlogContainer-index {
       display: flex;
       /* align-items: center; */
@@ -367,7 +431,6 @@ span.logo{
       justify-content: center;
       width: 900px;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -375,27 +438,9 @@ span.logo{
           max-width: 600px;
         }
 
-        .bio-container{
-          justify-content: center;
-        }
-
-        .bio-text h1{
-          max-width: 138px;
-          margin: auto;
-          padding: 0;
-        }
-
-        article.MainContainer{
-          padding: 40px 0;
-        }
-
-        article > .indexSection:not(:first-child):not(:last-child) {
-          margin: 100px 0;
-        }
-
-        .BlogContainer{
-          max-height: 350px;
-          max-width: 500px;
+        nav{
+          left: 0;
+          bottom: 0;
         }
 
         .logo-container {
@@ -403,7 +448,13 @@ span.logo{
         }
 
         a.logo{
-          font-size: 20pt;
+          margin: auto;
+          height: 100%;
+        }
+
+        a.logo img{
+          height: 100%;
+          width: auto;
         }
 
         .logo-container span {
@@ -427,18 +478,58 @@ span.logo{
 
         .nav-container{
           max-width: 600px;
+          display: none;
+        }
+
+        ul.mobileLinks{
+          display: flex;
+        }
+
+        .bio-container{
+          justify-content: center;
+          max-width: 450px;
+        }
+
+        .bio-text h1{
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          padding: 0;
+        }
+
+        article.MainContainer{
+          padding: 40px 0;
+        }
+
+        article > .indexSection:not(:first-child):not(:last-child) {
+          margin: 100px 0;
+        }
+
+        .BlogContainer{
+          max-height: 350px;
+          max-width: 500px;
         }
 
         .bio{
-          padding: 170px 0px;
+          padding: 40px 0;
+          height: max-content;
         }
 
         .bio-container .bio-item {
           width: 280px;
         }
 
+        div.mobile-logo-container{
+          display: flex;
+          justify-content: center;
+          height: 70px;
+          width: 200px;
+          margin: 0;
+        }
+
         .bio-container .bio-item img{
-          height: 190px;
+          height: 150px;
+          margin: 30px 0;
         }
 
         .bio-container .bio-text p{
@@ -448,6 +539,9 @@ span.logo{
         }
 
         /* Footer */
+        footer{
+          padding: 10px 0 45px 0;
+        }
 
         div.footerMain{
           width: 50vw;
@@ -456,5 +550,9 @@ span.logo{
 
         div.formContainer {
           width: 100%;
+        }
+
+        h2.contact{
+          display: none;
         }
     }

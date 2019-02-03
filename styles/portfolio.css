@@ -31,22 +31,20 @@ div.throwingShade{
   display: none;
 }
 
-.active{
-  display: block;
-}
 /* Badges */
 
 div.badgesContainer{
   width: 100%;
   padding: 0 100px;
-  overflow: hidden;
 }
 
 ul.badges{
-  width: auto;
+  width: 100%;
   margin: 0;
+  overflow: auto;
   display: inline-flex;
   list-style-type: none;
+  justify-content: center;
   padding: 0;
 }
 
@@ -80,7 +78,7 @@ section.row {
 .cardContainer{
   position: relative;
   background-color: #262626;
-  max-width: 480px;
+  width: 480px;
   margin: 10px;
 }
 
@@ -91,7 +89,7 @@ section.row {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(36, 62, 206, 0.6);
+  background: rgba(33,33,33, 0.6);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -112,6 +110,12 @@ section.row {
   transition: .2s;
   transform: translateY(1em);
 }
+
+.card-full{
+  display: flex;
+}
+
+
 
 .cardContainer:hover .card-text {
   transform: translateX(0);
@@ -157,7 +161,7 @@ a.more{
   }
 
   div.throwingShade{
-    max-width: 360px;
+    max-width: 100%;
     height: 250px;
   }
 
@@ -168,6 +172,9 @@ a.more{
 
   .image-responsive{
     height: 160px;
+  }
+  ul.badges{
+    justify-content: flex-start;
   }
 
 }

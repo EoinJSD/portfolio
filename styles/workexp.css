@@ -18,10 +18,10 @@
 
 .ExpContainer ol{
     font-size: 0;
-    width: 100vw;
+    width: max-content;
     height: 350px;
     padding: 0px;
-    transition: all 1s;
+  /*  transition: all 1s; */
 }
 
 .ExpContainer ol li{
@@ -29,13 +29,9 @@
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 300px;
+    width: 250px;
     height: 3px;
     background-color: #fff;
-}
-
-.ExpContainer ol li:last-child{
-	width: 600px;
 }
 
 .ExpContainer ol li:first-child {
@@ -46,6 +42,11 @@
 	margin-left: 14px;
 }
 
+.ExpContainer ol li:last-child{
+	width: 400px;
+  margin-right: 200px;
+}
+
 .ExpContainer ol li:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -54,10 +55,22 @@
     bottom: 0;
     width: 16px;
     height: 16px;
-    z-index: 3;
     transform: translateY(-50%);
     border-radius: 50%;
     background: #ff9148;
+}
+
+.ExpContainer ol li:last-child::after{
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: calc(100% - 1px);
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #ff9148;
 }
 
 /*-- --*/
@@ -65,12 +78,20 @@
 .ExpContainer ol li div {
   position: absolute;
   left: calc(100% + 7px);
-  width: 330px;
+  width: max-content;
+  width: -moz-max-content;
   padding: 15px;
   font-size: 1rem;
   white-space: normal;
   color: black;
   background: white;
+  display: flex;
+  flex-flow: column;
+}
+
+.ExpContainer div h3{
+  padding: 0px 0px 10px 0px;
+  margin: 0;
 }
 
 .ExpContainer ol li div:hover {
@@ -117,11 +138,10 @@
 .ExpContainer{
     max-width: 500px;
     display: flex;
-    justify-content: center;
 }
 
 .ExpContainer ol {
-  height: 200px;
+  height: 230px;
 }
 
 .ExpContainer ol li:first-child {

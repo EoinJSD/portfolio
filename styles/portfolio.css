@@ -4,29 +4,8 @@ div.landingContainer{
   max-width: 1903px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #212121;
-}
-/* Carousel */
-div.carouselContainer{
-  max-width: 1903px;
-  max-height: 436px;
-  background-color: #434343;
 }
 
-div.carouselContainer img{
-  object-fit: cover;
-  height: 436px;
-  width: 100%;
-
-}
-
-div.throwingShade{
-  width: 1903px;
-  background-color: rgb(0,0,0,0.6);
-  height: 436px;
-  position: absolute;
-  top: 0;
-}
 .hide{
   display: none;
 }
@@ -34,6 +13,8 @@ div.throwingShade{
 /* Badges */
 
 div.badgesContainer{
+  position: relative;
+  top: -146px;
   width: 100%;
   padding: 0 100px;
 }
@@ -52,7 +33,6 @@ ul.badges li.badge-item{
   padding: 20px;
   margin: 10px;
   height: 100%;
-  background-color: #212121;
   border-radius: 10px;
 }
 
@@ -67,19 +47,41 @@ ul.badges li.badge-item a.link{
 }
 
 section.row {
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
-.cardContainer{
+.card-container{
   position: relative;
   background-color: #262626;
   width: 480px;
   margin: 10px;
+  transition: 1s ease-out;
+  height: max-content;
+}
+
+/*--
+description styles
+--*/
+
+.desc{
+  padding: 0px 30px 30px;
+  display: none;
+}
+
+.desc.display{
+  display: block;
+}
+/*  */
+
+
+.card-container.grow{
+  width: 980px;
+  transition: 1s ease-out;
 }
 
 /* relevant styles */
@@ -89,44 +91,102 @@ section.row {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(33,33,33, 0.6);
   color: #fff;
   visibility: hidden;
   opacity: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-
-  /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
 
-.cardContainer:hover .card-body {
+.card-container:hover .card-body {
   visibility: visible;
   opacity: 1;
 }
 
+.card-container:visited:hover{
+  color: orange;
+  border: green;
+}
+
+.open{
+  display: none;
+  position: inherit;
+  top: 4px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.open.close{
+  display: block;
+}
+
+p.card-text {
+    padding: 15px 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .card-text {
-  transition: .2s;
-  transform: translateY(1em);
+    background: #212121;
+    transition: 0.5s ease-out;
+    transform: translateY(-15.5em);
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text.display{
+  display: none;
+  transition: .05s;
+}
+
+button{
+  background-color: #232323;
+  border: none;
+  color: #ff9148;
+  text-decoration: none;
+  font-family: OpenSans;
+  font-size: 12pt;
+}
+
+button:hover{
+  color: #444444;
+  cursor: pointer;
+}
+
+button:focus{
+  border-color: #ff9148;
+  border-width: 2px solid;
 }
 
 .card-full{
   display: flex;
 }
 
-
-
-.cardContainer:hover .card-text {
+.card-container:hover .card-text {
   transform: translateX(0);
 }
 
 .image-responsive{
-  background-color: #6c757d;
   display: block;
   height: 300px;
   width: 100%;
   object-fit: cover;
+  filter: grayscale(1);
+  transition: .2s;
+}
+
+.image-responsive.size{
+    padding: 30px 30px 0px 30px;
+}
+
+.card-container:hover .image-responsive{
+  filter: grayscale(0);
+}
+
+.card-container:hover .image-responsive{
+  filter: grayscale(0);
 }
 
 a.more{
@@ -142,17 +202,8 @@ a.more{
 }
 
 @media only screen and (max-width: 600px) {
-
   div.badgesContainer {
     padding: 0px;
-  }
-
-  div.carouselContainer{
-    height: 250px;
-  }
-
-  div.carouselContainer img {
-    height: 250px;
   }
 
   ul.badges li.badge-item {
@@ -160,14 +211,21 @@ a.more{
     font-size: 8pt;
   }
 
-  div.throwingShade{
-    max-width: 100%;
-    height: 250px;
-  }
-
-  .cardContainer {
+  .card-container {
     max-width: 360px;
     margin: 20px;
+  }
+
+  p.card-text {
+      padding: 9px 15px;
+      margin: 0 auto;
+      width: 100%;
+  }
+
+  .card-text {
+      background: #212121;
+      transition: 0.5s;
+      transform: translateY(-10em);
   }
 
   .image-responsive{

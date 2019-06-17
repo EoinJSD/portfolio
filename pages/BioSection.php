@@ -1,4 +1,3 @@
-<div class="bio">
   <div class="bio-container">
     <div class="mobile-logo-container">
         <a href="./index.php" class="logo"><img src="./images/eoinjsd_mobile.png" /></a>
@@ -15,4 +14,3 @@
       </div>
     </div>
   </div>
-</div>

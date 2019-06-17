@@ -1,38 +1,21 @@
 <!DOCTYPE html>
-<?php
-include './resources/dbconn_hg.php';
-include './resources/contactForm.php';
-?>
-<html>
+<html lang="en" dir="ltr">
 <head>
-    <?php include_once('pages/inc/head.inc.php')?>
-    <link rel="stylesheet" href="./styles/skills.css" />
-    <!-- <link rel="stylesheet" href="./styles/images.css" /> -->
-    <link rel="stylesheet" href="./styles/workexp.css" />
-    <link rel="stylesheet" href="./styles/education.css" />
-    <link rel="stylesheet" href="./styles/portfolio.css" />
+  <meta charset="utf-8">
+  <title>main menu for website</title>
+  <?php include_once('pages/inc/head.inc.php')?>
 </head>
 <body>
-    <header>
-      <?php include_once('pages/inc/header.inc.php') ?>
-      <?php include_once('pages/inc/mobileHeader.inc.php') ?>
-    </header>
-      <?php include_once('pages/BioSection.php') ?>
-    <article class="MainContainer">
-      <section class="indexSection"><?php include_once('pages/SkillsSection.php') ?> </section>
-      <section class="indexSection"><?php include_once('pages/WorkExperience.php') ?></section>
-      <!-- <section class="indexSection"><?php //include_once('pages/ShowOff.php') ?></section> -->
-      <section class="indexSection"><?php include_once('pages/BlogSection.php') ?></section>
-      <section class="indexSection"><?php include_once('pages/Education.php') ?></section>
-    </article>
-
-    <footer>
-      <?php include_once('pages/inc/footer.inc.php') ?>
-    </footer>
+  <div class="mainMenu">
+    <div class="left Side">
+      <a href="experience.php">Experience</a>
+    </div>
+      <!-- to add in an about button <?php/// include_once('pages/BioSection.php') ?> -->
+    <div class="right Side">
+      <a href="portfolio.php">Portfolio</a>
+    </div>
+  </div>
 </body>
-<script src="scripts/jquery/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="./scripts/education.js"></script>
-<script type="text/javascript" src="./scripts/index.js"></script>
-<script type="text/javascript" src="./scripts/skills.js"></script>
-<script type="text/javascript" src="./scripts/contact.js"></script>
+  <script src="scripts/jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./scripts/index.js"></script>
 </html>

@@ -1,11 +1,11 @@
 /* Tab */
 div.SkillsContainer{
   width: 1030px;
+  background-color: #262626;
 }
 
 .tab{
   overflow: hidden;
-  background-color: #232323;
 }
 
 /* Buttons */
@@ -26,12 +26,12 @@ div.SkillsContainer{
 
 .tab button:hover{
   border-top: 1px solid #fff;
-  background-color: #212121;
+  background-color: #232323;
 }
 
 .tab button.active{
   border-top: 1px solid #ff9148;
-  background-color: #212121;
+  background-color: #262626;
   color: #fff;
 }
 
@@ -44,7 +44,6 @@ div.SkillsContainer{
   display: none;
   padding: 6px 12px;
   border-top: 1px solid #ff9148;
-  background-color: #212121;
 }
 
 .material-icons{

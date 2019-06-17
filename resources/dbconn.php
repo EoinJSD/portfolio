@@ -3,7 +3,7 @@ function OpenConnection()
 {
     $host = "localhost"; //dbhost
     $user = "root"; //dbuser
-    $pass = ""; //dbpassword
+    $pass = (trim(@file_get_contents('../../dbconnections/sqlpassword.txt'))); //dbpassword
     $name = "portfolio"; //dbname
 
     $conn = mysqli_connect($host,$user,$pass,$name);

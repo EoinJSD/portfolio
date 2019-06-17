@@ -452,13 +452,16 @@ div.right a{
 
 div.left{
   background-color: #ff9148;
-  transition: all 1s ease;
 }
 
 div.left:hover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/bg-1.jpg);
-  transform: scale(1.5);
+  background-position: left;
+}
 
+div.right:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/bg-1.jpg);
+  background-position: right;
 }
 
 div.left a{
